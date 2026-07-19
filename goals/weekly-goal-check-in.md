@@ -79,3 +79,13 @@ Branden); name the trades (pest control first, then plumbing, HVAC, electrical, 
 matched to the cold-email 15-minute ask; meta title/description carry the promise. New homepage
 built at `agent-operations/homepage/index.html`, deployed to Vercel as a **preview** on the
 agentic-ops project — production swap awaiting Ryan's approval.
+
+**Round 2 (2026-07-19):** Ryan reviewed v1 — copy direction approved, but he prefers the
+current live site's more modern look, so **do not ship**. His edits, now applied in v2: case
+study anonymized to "a pest control company based out of Ohio"; no 15-minute event type exists,
+so buttons read "Book a walkthrough" (pointing at the 30-minute discovery link) while the
+15-minute promise stays in the closing headline. v2 also got a design pass (Manrope type,
+glass sticky nav, gradient hero with a live "digital employee" conversation mockup, elevated
+cards). Still blocked from seeing the current live design: Ryan to either allow
+agentoperationsai.com in the environment network settings or paste a screenshot of the current
+homepage so the design language can be matched before any production deploy.
