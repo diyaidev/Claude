@@ -59,3 +59,13 @@ Operations AI added zero. DIY AI is conversational AI and effectively already a 
 LSACommand, so it isn't a separate push. Ryan's pick: **Agent Operations AI**. Follow-up he
 requested: a review of agentoperationsai.com for setup/conversion problems (delivered in
 session 2026-07-19).
+
+**Review outcome (2026-07-19):** infrastructure is healthy (domain + www attached to the
+Vercel `agentic-ops` project, production deploy READY as of Jul 14), but the homepage leads
+with "Agentic Ops | Autonomous Business Intelligence" — a message mismatch against the cold
+emails that send trades owners there expecting "answer every call and web lead first-ring,
+book the job, priced like labor, not software." Recommended: rewrite the homepage around the
+missed-call promise for trades, unify the brand name (emails say Agent Operations AI, site
+says Agentic Ops), and add an instant proof mechanism (live demo line / test-call widget).
+Full page-by-page teardown pending Ryan allowing agentoperationsai.com in this environment's
+network policy (direct fetch is currently egress-blocked).
