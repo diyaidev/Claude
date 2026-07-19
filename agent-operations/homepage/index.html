@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Operations — Every call answered. Every job booked. Every review collected.</title>
+<meta name="description" content="Agent Operations puts a digital employee inside your pest control, plumbing, HVAC, electrical, or roofing company. It answers every call and web lead on the first ring, runs the intake, creates the customer in FieldRoutes or ServiceTitan, sends the estimate, books the job, gets the agreement signed, and follows up for the five-star review. Priced like labor, not software.">
+<link rel="canonical" href="https://agentoperationsai.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agentoperationsai.com/">
+<meta property="og:title" content="Agent Operations — Every call answered. Every job booked. Every review collected.">
+<meta property="og:description" content="A digital employee for pest control, plumbing, HVAC, electrical, and roofing companies. First ring to five-star review, and everything in between. Priced like labor, not software.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F5A623'/%3E%3Ctext x='32' y='44' font-family='Arial,Helvetica,sans-serif' font-size='34' font-weight='800' text-anchor='middle' fill='%230A1628'%3EA%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --navy:#0A1628; --navy-2:#0E1D33; --ink:#101826; --muted:#4A5361;
+    --paper:#FFFFFF; --mist:#F4F6F9; --line:#E3E8EF;
+    --amber:#F5A623; --amber-deep:#DD8F0E; --amber-ink:#191104;
+    --on-navy:#C9D3E0; --on-navy-strong:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  section{padding:clamp(64px,9vw,110px) 0}
+  h1,h2,h3{line-height:1.15;letter-spacing:-0.02em}
+  h1{font-size:clamp(2.1rem,5.4vw,3.6rem);font-weight:800}
+  h2{font-size:clamp(1.6rem,3.4vw,2.35rem);font-weight:800}
+  p.lead{font-size:clamp(1.05rem,1.6vw,1.25rem)}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--amber-deep);margin-bottom:14px}
+  .dark .eyebrow{color:var(--amber)}
+  .btn{display:inline-block;font-weight:700;text-decoration:none;border-radius:10px;
+    padding:15px 26px;font-size:1.02rem;transition:transform .12s ease,background .12s ease}
+  .btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .btn-primary{background:var(--amber);color:var(--amber-ink)}
+  .btn-primary:hover{background:var(--amber-deep);transform:translateY(-1px)}
+  .btn-ghost{color:var(--on-navy-strong);border:1.5px solid rgba(255,255,255,.35)}
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .dark{background:var(--navy);color:var(--on-navy)}
+  .dark h1,.dark h2,.dark h3{color:var(--on-navy-strong)}
+
+  /* Nav */
+  nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .wordmark{color:#fff;font-weight:800;font-size:1.15rem;text-decoration:none;letter-spacing:-.01em}
+  .wordmark span{color:var(--amber)}
+  .nav-cta{font-size:.92rem;padding:11px 18px}
+
+  /* Hero */
+  .hero{background:
+    radial-gradient(900px 420px at 85% -10%, rgba(245,166,35,.14), transparent 60%),
+    var(--navy);}
+  .hero .wrap{max-width:900px}
+  .hero p.lead{margin:22px 0 30px;color:var(--on-navy)}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .trust{margin-top:26px;font-size:.95rem;color:var(--on-navy)}
+  .trust b{color:var(--on-navy-strong)}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--amber);
+    margin-right:9px;vertical-align:1px}
+
+  /* Employee section */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:38px}
+  .tile{background:var(--mist);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+  .tile b{display:block;font-size:1.45rem;letter-spacing:-.01em;margin-bottom:6px}
+  .tile span{color:var(--muted);font-size:.98rem}
+
+  /* Workflow */
+  .flow{background:var(--mist)}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:40px;
+    list-style:none;counter-reset:step}
+  .step{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 24px}
+  .step em{display:block;font-style:normal;font-weight:800;font-size:1.9rem;color:var(--amber-deep);
+    letter-spacing:-.02em;margin-bottom:10px}
+  .step h3{font-size:1.12rem;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.97rem}
+  .flow-tag{margin-top:34px;font-weight:700;font-size:1.15rem}
+
+  /* Labor pricing */
+  .labor .wrap{max-width:860px}
+  .labor p.lead{margin-top:18px;color:var(--muted)}
+
+  /* Case study */
+  .case p{max-width:820px}
+  .case p.lead{margin:20px 0 26px}
+  .case .inline-cta{color:var(--amber);font-weight:700;text-decoration:none;font-size:1.05rem}
+  .case .inline-cta:hover{text-decoration:underline}
+  .syschips{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap}
+  .syschip{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 16px;
+    font-size:.9rem;color:var(--on-navy)}
+
+  /* Trades */
+  .trades .chips{display:flex;gap:12px;flex-wrap:wrap;margin:34px 0 26px}
+  .chip{border:1.5px solid var(--line);border-radius:999px;padding:12px 20px;font-weight:700;font-size:1rem}
+  .chip.hot{background:var(--amber);border-color:var(--amber);color:var(--amber-ink)}
+  .chip.hot small{display:block;font-weight:600;font-size:.78rem;margin-top:2px}
+  .trades p{color:var(--muted);max-width:760px}
+
+  /* Final CTA */
+  .final{text-align:center}
+  .final .wrap{max-width:820px}
+  .final h2{font-size:clamp(1.8rem,3.8vw,2.6rem)}
+  .final p.lead{margin:20px auto 32px;color:var(--on-navy)}
+  .final .alt{margin-top:20px;font-size:.98rem;color:var(--on-navy)}
+  .final .alt a{color:var(--amber);text-decoration:none;font-weight:700}
+  .final .alt a:hover{text-decoration:underline}
+
+  footer{background:var(--navy-2);color:var(--on-navy);padding:34px 0;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer a{color:var(--on-navy-strong);text-decoration:none}
+  footer a:hover{color:var(--amber)}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap nav-inner">
+    <a class="wordmark" href="#top">Agent<span> Operations</span></a>
+    <a class="btn btn-primary nav-cta" href="https://ryan.diyai.ai/30-min-discovery-call">Book a 15-minute walkthrough</a>
+  </div>
+</nav>
+
+<section class="hero dark" id="top">
+  <div class="wrap">
+    <span class="eyebrow">A digital employee for the trades</span>
+    <h1>Every call answered. Every job booked. Every review collected.</h1>
+    <p class="lead">Agent Operations puts a digital employee inside your company. It picks up the
+    first ring, runs the intake, prices the work, books the job, sends the agreement, and follows
+    up until the five-star review is in. Built for pest control, plumbing, HVAC, electrical, and
+    roofing companies. Priced like labor, not software.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://ryan.diyai.ai/30-min-discovery-call">Book a 15-minute walkthrough</a>
+      <a class="btn btn-ghost" href="#workflow">See the full workflow</a>
+    </div>
+    <p class="trust"><span class="dot"></span>Running live at a pest control company on
+    <b>FieldRoutes</b> — from intake to review.</p>
+  </div>
+</section>
+
+<section class="employee">
+  <div class="wrap">
+    <span class="eyebrow">What it is</span>
+    <h2>This is not an answering service. It's an employee.</h2>
+    <p class="lead" style="margin-top:18px;max-width:820px;color:var(--muted)">An answering service
+    takes a message. Software sits there waiting for somebody to use it. A digital employee does
+    the work: the phone, the data entry, the estimate, the schedule, the paperwork, and the
+    follow-up. The whole job of a great office employee, on every lead, around the clock.</p>
+    <div class="tiles">
+      <div class="tile"><b>First ring</b><span>Answers every call and web lead in seconds — while
+      your competitors' phones go to voicemail.</span></div>
+      <div class="tile"><b>24/7 on shift</b><span>Nights, weekends, holidays, and the lunch rush.
+      It never calls in sick and never quits.</span></div>
+      <div class="tile"><b>One employee, whole loop</b><span>From intake to review with no
+      handoffs, no sticky notes, and no retyping.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="flow" id="workflow">
+  <div class="wrap">
+    <span class="eyebrow">What it does</span>
+    <h2>From first ring to five-star review.</h2>
+    <p class="lead" style="margin-top:16px;color:var(--muted)">Here's what your digital employee
+    actually does on every lead — the whole loop, and everything in between.</p>
+    <ol class="steps">
+      <li class="step"><em>01</em><h3>Answers the first ring</h3><p>Picks up every call and web
+      lead in seconds, 24/7. If your office team is on the other line, it catches the overflow
+      instead of letting voicemail take the job.</p></li>
+      <li class="step"><em>02</em><h3>Runs the intake</h3><p>Asks the questions you would ask:
+      the property, the problem, the urgency, and how they found you.</p></li>
+      <li class="step"><em>03</em><h3>Creates the customer</h3><p>Enters the lead in FieldRoutes,
+      ServiceTitan, or the system you already run. No duplicates, no lost slips of paper.</p></li>
+      <li class="step"><em>04</em><h3>Prices and sends the estimate</h3><p>Works from your price
+      book and gets the estimate out while the customer is still on the hook.</p></li>
+      <li class="step"><em>05</em><h3>Books the job</h3><p>Puts the inspection or service on your
+      schedule and confirms it with the customer.</p></li>
+      <li class="step"><em>06</em><h3>Gets the agreement signed</h3><p>Sends the service agreement
+      and follows up until the signature is back — not filed away half-done.</p></li>
+      <li class="step"><em>07</em><h3>Follows up and collects the review</h3><p>Checks that the
+      job went right, then asks for the five-star review while the customer is happiest.</p></li>
+    </ol>
+    <p class="flow-tag">First ring to five-star review. And everything in between.</p>
+  </div>
+</section>
+
+<section class="labor">
+  <div class="wrap">
+    <span class="eyebrow">What it costs</span>
+    <h2>Priced like labor, not software.</h2>
+    <p class="lead">You wouldn't pay per-seat license fees for an office employee, so you won't
+    here either. Agent Operations is priced like the hire you've been putting off — a fraction of
+    a fully loaded office salary — and it works every shift you're closed.</p>
+  </div>
+</section>
+
+<section class="case dark">
+  <div class="wrap">
+    <span class="eyebrow">Already running in pest control</span>
+    <h2>We already built this for a pest control company. Wire to wire.</h2>
+    <p class="lead">At The Mole Hunter, a pest control operation running FieldRoutes, our digital
+    employee backs up the office team on every line. It answers when they can't, runs the intake,
+    creates the customer in FieldRoutes, sends estimates, books inspections, gets service
+    agreements signed, and asks for the review after the job — with the call routing through
+    CallRail and DialPad wired in and handled.</p>
+    <p>If you run FieldRoutes, we are not starting from scratch on your business. We're installing
+    something that already works. <a class="inline-cta"
+    href="https://ryan.diyai.ai/30-min-discovery-call">Run FieldRoutes? Book the walkthrough →</a></p>
+    <div class="syschips" aria-label="Systems we work inside">
+      <span class="syschip">FieldRoutes</span>
+      <span class="syschip">ServiceTitan</span>
+      <span class="syschip">CallRail</span>
+      <span class="syschip">DialPad</span>
+      <span class="syschip">Your scheduling calendar</span>
+    </div>
+  </div>
+</section>
+
+<section class="trades">
+  <div class="wrap">
+    <span class="eyebrow">Who it's for</span>
+    <h2>Built for the trades that live on the phone.</h2>
+    <div class="chips">
+      <span class="chip hot">Pest control<small>ready today on FieldRoutes</small></span>
+      <span class="chip">Plumbing</span>
+      <span class="chip">HVAC</span>
+      <span class="chip">Electrical</span>
+      <span class="chip">Roofing</span>
+    </div>
+    <p>If your customers call when something is wrong, and the first company to answer wins the
+    job, this was built for you.</p>
+  </div>
+</section>
+
+<section class="final dark">
+  <div class="wrap">
+    <h2>If catching every lead the moment it comes in is worth 15 minutes, let's talk.</h2>
+    <p class="lead">Bring your call volume and the systems you run today. We'll walk you through
+    exactly what your digital employee would handle in your business — in plain language, no
+    tech talk.</p>
+    <a class="btn btn-primary" href="https://ryan.diyai.ai/30-min-discovery-call">Book your 15-minute walkthrough</a>
+    <p class="alt">Prefer email? <a href="mailto:ryan@agentoperationsai.com">ryan@agentoperationsai.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Agent Operations · From first ring to five-star review.</div>
+    <div><a href="https://agentoperationsai.com">agentoperationsai.com</a> ·
+    <a href="mailto:ryan@agentoperationsai.com">ryan@agentoperationsai.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

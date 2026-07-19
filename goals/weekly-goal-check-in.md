@@ -69,3 +69,13 @@ missed-call promise for trades, unify the brand name (emails say Agent Operation
 says Agentic Ops), and add an instant proof mechanism (live demo line / test-call widget).
 Full page-by-page teardown pending Ryan allowing agentoperationsai.com in this environment's
 network policy (direct fetch is currently egress-blocked).
+
+**Follow-through (2026-07-19):** Ryan green-lit the rewrite with sharper positioning: one name —
+**Agent Operations** (no "AI", no abbreviations); the product is a **digital employee** that runs
+the whole loop (intake → customer creation → estimate → booking → agreement → follow-up →
+review), not just call answering; lead with the pest control solution already implemented at
+The Mole Hunter on **FieldRoutes** (platform confirmed via the Apr 7 meeting transcript with
+Branden); name the trades (pest control first, then plumbing, HVAC, electrical, roofing); CTA
+matched to the cold-email 15-minute ask; meta title/description carry the promise. New homepage
+built at `agent-operations/homepage/index.html`, deployed to Vercel as a **preview** on the
+agentic-ops project — production swap awaiting Ryan's approval.
