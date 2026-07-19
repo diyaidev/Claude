@@ -4,7 +4,7 @@ A living log for the weekly "Krone" (cron) coaching question. A scheduled Routin
 Claude session every Thursday morning (~9am ET), reviews this file plus Ryan's recent activity,
 asks ONE question that moves him toward the goal below, and logs it here.
 
-## The goal (inferred v1 — 2026-07-16)
+## The goal (v1.1 — inferred 2026-07-16, focus set by Ryan 2026-07-19)
 
 **Turn the AI-for-local-services business — DIY AI (diyai.ai), LSACommand.com, and Agent
 Operations AI (agentoperationsai.com) — into a predictable, paying-customer revenue engine
@@ -12,6 +12,11 @@ that can stand on its own next to (and eventually beyond) the Accelerate Marketi
 
 More concretely: convert the large audience-building effort Ryan already runs every week into
 paying customers of a focused offer.
+
+**Current focus (Ryan's call, from the Q1 answer):** push Agent Operations AI hard for the
+next 90 days. LSACommand.com keeps running — it's converting (a couple of new clients in the
+last 30 days) — and DIY AI is treated as the conversational-AI component inside LSACommand
+rather than a separate offer.
 
 ### Evidence (from calendar, email, and business tools — July 2026)
 
@@ -49,4 +54,8 @@ paying customers of a focused offer.
 paying customers did each one add in the last 30 days, and which ONE offer would you pick to
 push hard if the other two had to wait 90 days?
 
-**A:** _(pending)_
+**A (2026-07-19):** LSACommand added a couple of new clients in the last 30 days; Agent
+Operations AI added zero. DIY AI is conversational AI and effectively already a component of
+LSACommand, so it isn't a separate push. Ryan's pick: **Agent Operations AI**. Follow-up he
+requested: a review of agentoperationsai.com for setup/conversion problems (delivered in
+session 2026-07-19).
