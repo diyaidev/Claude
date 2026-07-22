@@ -11,6 +11,10 @@
 - **Alex Contes** — alex@diyai.ai (DIYAI team; CC on all client communications)
 - **Chris Monkaitis ("Chris M")** — chris@monk-marketing.com (Monk Marketing; white-label partner being onboarded; recurring calls Wednesdays 11 AM ET)
 
+## Scheduled jobs
+
+- **Monthly card & subscription watch** — 1st of each month (~8 AM PT): reviews prior-month spend across Chase credit card, Apple Card, Amex, and Wells Fargo debit; flags new/changed subscriptions and odd charges; notifies Ryan via push + email. Playbook and current status: `docs/monthly-card-watch.md`. If Ryan says "run the card watch now", follow that playbook immediately.
+
 ## Tooling notes
 
 - Meeting content sources, in order of reliability from this environment: Gmail "Notes: …" emails from gemini-notes@google.com (Google Meet/Gemini recaps land in ryan@diyai.ai's inbox shortly after each meeting), then Granola/Google Drive (both may require connector re-approval).
