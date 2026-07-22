@@ -19,3 +19,5 @@
 
 - Meeting content sources, in order of reliability from this environment: Gmail "Notes: …" emails from gemini-notes@google.com (Google Meet/Gemini recaps land in ryan@diyai.ai's inbox shortly after each meeting), then Granola/Google Drive (both may require connector re-approval).
 - Sending email: the Gmail connector is draft/read-only; actual sends go through the Zapier Gmail "Send Email" action.
+- Reading email: Composio holds active Gmail connections for all four mailboxes — ryansteinolfson@gmail.com (`gmail_spire-rosier`), ryan@accelerateyourmarketing.com (`gmail_smur-howard`; most bank/card email lands here), ryan@diyai.ai (`gmail_equity-pig`), max@diyai.ai (`gmail_rail-mider`, default). Use `COMPOSIO_MULTI_EXECUTE_TOOL` → `GMAIL_FETCH_EMAILS` with the account alias. Ryan's business domain is accelerateyourmarketing.com (not acceleratemarketing.com).
+- Intuit QuickBooks connector reaches company "Accelerate Marketing", which has zero transaction data Jul 2025–Jun 2026 — confirm it's the right company file / bank feeds are connected before relying on it.

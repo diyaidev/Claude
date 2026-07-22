@@ -7,25 +7,26 @@ A recurring monthly review of Ryan's spending across **Chase credit card, Apple 
 - **Run mode:** fresh Claude session per run, in this workspace environment
 - **On-demand:** in any Claude session, say *"run the monthly card watch now"* — follow the playbook below
 
-## Status (as of 2026-07-22 setup session)
+## Data sources (verified 2026-07-22)
 
-| Piece | Status |
-|---|---|
-| Scheduled Routine | **Pending activation** — the `create_trigger` call was declined by the session permission layer; needs Ryan's one-time approval (see Activation below) |
-| QuickBooks connector | Connected (Accelerate Marketing), but **no transaction data** for Apr–Jun 2026 (`hasTransactions: false`) — QBO bank feeds appear stale/disconnected |
-| Gmail connector (ryan@diyai.ai) | Working, but inbox contains **zero** emails from chase.com / americanexpress.com / wellsfargo.com / apple.com in the last 90 days — bank email lands elsewhere |
-| Personal Gmail (ryansteinolfson@gmail.com) | Not directly reachable — Composio/Zapier tool calls were declined during setup |
-| ryan@acceleratemarketing.com | Not connected to any available tool |
+| Source | Status | Role |
+|---|---|---|
+| Composio Gmail — ryan@accelerateyourmarketing.com (`gmail_smur-howard`) | **Verified working** — ~200 bank-domain emails per 45 days; Amex (acct …023000) confirmed live | **Primary** — most card email lands here |
+| Composio Gmail — ryansteinolfson@gmail.com (`gmail_spire-rosier`) | Verified working — but only 2 bank-domain emails in 45 days | Primary (light traffic today; grows if Ryan enables issuer alerts) |
+| Composio Gmail — ryan@diyai.ai (`gmail_equity-pig`) | Verified working | Supplemental; also reachable via the native claude.ai Gmail connector |
+| Intuit QuickBooks (company "Accelerate Marketing") | Connected, but **zero transactions Jul 2025–Jun 2026** (`hasTransactions: false`) | Secondary once fixed — likely the connector is signed into an empty/wrong company file, or bank feeds were never set up in it |
+| Zapier Gmail (12 actions enabled) | Enabled; used for outbound email sends elsewhere in the workspace | Not needed by this watch |
 
-## Ryan's setup checklist (makes the watch actually see data)
+Note: Ryan's business domain is **accelerateyourmarketing.com** (not acceleratemarketing.com).
 
-1. **Reconnect QBO bank feeds** — in QuickBooks Online go to **Banking** (https://qbo.intuit.com/app/banking) and re-authorize the Chase, Apple Card, Amex, and Wells Fargo feeds so transactions flow again.
-2. **Route bank email into a readable inbox** — in ryansteinolfson@gmail.com (and ryan@acceleratemarketing.com), create a filter: `from:(chase.com OR americanexpress.com OR aexp.com OR wellsfargo.com OR apple.com)` → **forward to ryan@diyai.ai** (Gmail: Settings → Forwarding → add forwarding address, then create the filter). Alternatively, approve Claude's Composio Gmail access for the personal account.
-3. **Turn on transaction alert emails** at each issuer (Chase, Amex, Wells Fargo, Apple Card all support per-transaction or daily alert emails) — merchant-level alerts make subscription detection far more precise than statements alone.
+## Ryan's remaining setup items (optional but recommended)
+
+1. **QuickBooks**: verify the Claude QuickBooks connector is signed into the company file that actually holds your books, and that bank feeds for the four accounts are connected there (QBO → Banking: https://qbo.intuit.com/app/banking). Until then the watch runs on email data alone.
+2. **Issuer alert emails**: turn on per-transaction or daily alert emails at Chase, Wells Fargo, and Apple Card (Amex already emails ryan@accelerateyourmarketing.com). Merchant-level alerts make "what exactly is this new $14.99 charge" answerable.
 
 ## Activation
 
-The Routine could not be created from the setup session (permission declined). To activate: in a Claude session, say **"Create the monthly card watch Routine exactly as specified in docs/monthly-card-watch.md"** and **approve the `create_trigger` permission prompt** when it appears. Parameters: name `Monthly card & subscription watch`, cron `7 15 1 * *` (UTC), new session per fire, notifications push + email, prompt = the playbook below.
+The Routine is created from a Claude session with the parameters above (name `Monthly card & subscription watch`, cron `7 15 1 * *` UTC, new session per fire, notifications push + email, prompt = the playbook below). If it is ever missing (check via `list_triggers`), recreate it by saying **"Create the monthly card watch Routine exactly as specified in docs/monthly-card-watch.md"** and approving the permission prompt.
 
 ## Playbook (the Routine prompt)
 
@@ -36,9 +37,9 @@ The Routine could not be created from the setup session (permission declined). T
 > Procedure:
 > 1. Target month = the full calendar month immediately before today. Baseline = the 3 months before that.
 > 2. Gather data from EVERY source below. If a source is unavailable or errors, note the gap and continue — never fail silently, and never stop at the first source that works.
->    a. Intuit QuickBooks connector: call `company_info`, then `profit_loss_quickbooks_account` covering baseline start through target-month end (returns monthly columns). Compare expense accounts month-over-month; flag categories that are new or jumped more than ~25% or ~$50. If it returns `hasTransactions: false`, report "QuickBooks bank feeds are not syncing" as an action item for Ryan.
->    b. Gmail connector (ryan@diyai.ai): `search_threads` for the target month with queries such as `{from:chase.com from:americanexpress.com from:aexp.com from:wellsfargo.com from:apple.com}`, `subject:(statement OR receipt OR subscription OR renewal OR trial OR "price increase")`, `{from:stripe.com from:paypal.com}`. Open promising threads with `get_thread`; extract merchant, amount, date — including messages auto-forwarded from Ryan's other mailboxes.
->    c. Composio Gmail tools (`COMPOSIO_SEARCH_TOOLS` → `GMAIL_FETCH_EMAILS`), if available — may reach ryansteinolfson@gmail.com where most bank/card email lands. Same searches.
+>    a. PRIMARY — Composio Gmail (`COMPOSIO_MULTI_EXECUTE_TOOL` → tool_slug `GMAIL_FETCH_EMAILS`), against each account: `gmail_smur-howard` (ryan@accelerateyourmarketing.com — most card email), `gmail_spire-rosier` (ryansteinolfson@gmail.com), `gmail_equity-pig` (ryan@diyai.ai). Queries scoped to the target month (`after:YYYY/MM/DD before:YYYY/MM/DD`): `{from:chase.com from:americanexpress.com from:aexp.com from:wellsfargo.com from:apple.com}`; `subject:(receipt OR subscription OR renewal OR trial OR "price increase")`; `{from:stripe.com from:paypal.com}`. Extract merchant, amount, date, and account hints (e.g., "account ending …") from each alert/receipt/statement email.
+>    b. SECONDARY — Intuit QuickBooks connector: `company_info`, then `profit_loss_quickbooks_account` covering baseline start through target-month end. Compare expense accounts month-over-month; flag new categories or jumps >~25% / ~$50. If `hasTransactions: false` (the state as of 2026-07-22), add one action-item line to the report: "QuickBooks still has no bank-feed data."
+>    c. BACKUP — native claude.ai Gmail connector (ryan@diyai.ai): `search_threads` with the same queries if Composio is unavailable.
 > 3. Build a merchant-level list of charges and recurring items. Compare against baseline months; classify each: NEW subscription, price change, duplicate charge, unfamiliar/out-of-pattern charge, or known-recurring (fine).
 > 4. The FINAL message is what gets pushed/emailed to Ryan — make it self-sufficient:
 >    - Line 1 verdict: "Card watch <Month YYYY>: N items need your attention" (or "all clear"), naming any data-source gaps in the same line.
@@ -49,5 +50,5 @@ The Routine could not be created from the setup session (permission declined). T
 
 ## Operations
 
-- **Change schedule / pause / delete:** ask Claude to `list_triggers`, then `update_trigger` / `delete_trigger` on `Monthly card & subscription watch` (requires approving the permission prompt).
-- **Why email + QuickBooks both:** QuickBooks (once feeds sync) gives complete category-level coverage; issuer/receipt emails give merchant-level precision for naming the exact subscription. Together they cover each other's blind spots.
+- **Change schedule / pause / delete:** ask Claude to `list_triggers`, then `update_trigger` / `delete_trigger` on `Monthly card & subscription watch`.
+- **Why email + QuickBooks both:** issuer/receipt emails give merchant-level precision for naming the exact subscription; QuickBooks (once its company file has bank feeds) gives complete category-level coverage as a cross-check. Together they cover each other's blind spots.
