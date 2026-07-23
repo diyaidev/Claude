@@ -47,6 +47,10 @@ momentum; DIY AI remains the conversational-AI component inside LSACommand.
    week (email / calendar / CRM signals when available).
 3. Favor questions that force a decision, a number, or a commitment — not reflection for its own sake.
 4. Log every question here; log Ryan's answer when he gives one. Commit and push after each update.
+5. Each Thursday, also refresh `pay-per-call/launch-tracker.md` (open-items status + the weekly
+   scoreboard row: applications, screened, live sellers, calls, payouts) and
+   `agent-operations/outbound-scoreboard.md` (sends / replies / meetings per vertical) from
+   Gmail and calendar data before writing the question — questions should cite these numbers.
 
 ## Question log
 
