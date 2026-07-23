@@ -15,7 +15,7 @@ A recurring monthly review of Ryan's spending across **Chase credit card, Apple 
 | Amex …23000 | ✅ ("American Express 23000") | ✅ rich — lands in ryan@accelerateyourmarketing.com | Best-covered account |
 | Chase Business Card …1811 | ❌ not in the books today | ✅ Paperless statements/notices → ryan@accelerateyourmarketing.com (enabled 2026-07-23) | Optional: per-transaction Account Alerts to email for merchant-level detail |
 | Chase personal card …3413 | ❌ personal card | ✅ Statement emails confirmed arriving in ryansteinolfson@gmail.com (verified: Jul 14 statement, balance $3,422.55); paperless re-confirmed 2026-07-23 | Optional: per-transaction Account Alerts to email for merchant-level detail |
-| Apple Card | ❌ personal card, not in the business books | None seen in last 45 days | **Enable Apple Card statement/transaction emails** (weakest link today) |
+| Apple Card | ❌ personal card | ❌ No email path — Apple ID is goryan@me.com (iCloud), not a connected inbox | Automated option: forward iCloud Mail → gmail. Manual path (proven 2026-07-23): export transactions CSV from Wallet and upload to a session. Autopay pulls from WF account …5623 |
 | PayPal | ✅ ("Paypal Bank") | Receipt emails | Secondary |
 
 ## Data sources
@@ -32,7 +32,7 @@ Notes: Ryan's business domain is **accelerateyourmarketing.com** (not accelerate
 
 ## Ryan's remaining setup items (recommended)
 
-1. **Apple Card — still the weakest link**: enable monthly statement + transaction emails (iPhone: Wallet → Apple Card → account/statement settings). Not in QuickBooks, and no Apple email has appeared in any connected inbox.
+1. **Apple Card**: Apple mail routes to the Apple ID goryan@me.com (iCloud), so for automated coverage set up iCloud Mail forwarding → ryansteinolfson@gmail.com. Until then, the manual path works: Wallet → Apple Card → monthly statement → Export Transactions (CSV) and upload it to a session (Ryan did this for July 2026 on 2026-07-23).
 2. **Chase (optional sharpening)**: paperless statements/notices were enabled 2026-07-23 for both cards (…1811 business, …3413 personal). For merchant-level, same-day signal, also enable per-transaction Account Alerts delivered to email (Chase: Profile & Settings → Alerts).
 
 ## Activation
@@ -58,6 +58,15 @@ The Routine is created from a Claude session with the parameters above (name `Mo
 >    - Current subscription roster with amounts and estimated monthly total.
 >    - One line: sources checked vs. unavailable (including "QB books posted through <month>").
 > 5. Do NOT send emails or external messages, and do not modify the repository. The Routine's built-in completion notification delivers the summary to Ryan by push + email.
+
+## Subscription baseline (seed — the watch updates this picture each run)
+
+| Merchant | Amount | Cadence | Card | First confirmed |
+|---|---|---|---|---|
+| Google Workspace | $9.99 | Monthly | Apple Card | Jul 5, 2026 (CSV) — verify it isn't duplicating a business-paid Workspace plan |
+| Google Cloud | ~$0.35 | Monthly (usage-based) | Apple Card | Jul 1, 2026 (CSV) |
+
+The full roster (Amex, Chase ×2, WF) gets built on the first complete monthly run from email + QuickBooks and should replace this seed table.
 
 ## Operations
 
