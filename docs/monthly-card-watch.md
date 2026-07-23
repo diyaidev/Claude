@@ -11,9 +11,10 @@ A recurring monthly review of Ryan's spending across **Chase credit card, Apple 
 
 | Account | QuickBooks (business books) | Email | Notes |
 |---|---|---|---|
-| Wells Fargo debit ("Wells Fargo Operating") | ✅ posted on bookkeeping cadence | Some alerts to personal gmail | QB is authoritative once the month is posted |
+| Wells Fargo debit ("Wells Fargo Operating") | ✅ posted on bookkeeping cadence | ✅ Real-time alerts (Zelle, transactions) → ryansteinolfson@gmail.com — **currently auto-trashed**; Gmail purges Trash after ~30 days | QB authoritative once posted; fix the trash filter to keep full-month email coverage |
 | Amex …23000 | ✅ ("American Express 23000") | ✅ rich — lands in ryan@accelerateyourmarketing.com | Best-covered account |
-| Chase credit card | ❌ personal card, not in the business books | Partial — only Credit Journey mail seen recently | **Enable Chase transaction-alert emails** for real coverage |
+| Chase Business Card …1811 | ❌ not in the books today | ✅ Paperless statements/notices → ryan@accelerateyourmarketing.com (enabled 2026-07-23) | Optional: per-transaction Account Alerts to email for merchant-level detail |
+| Chase personal card …3413 | ❌ personal card | ✅ Statement emails confirmed arriving in ryansteinolfson@gmail.com (verified: Jul 14 statement, balance $3,422.55); paperless re-confirmed 2026-07-23 | Optional: per-transaction Account Alerts to email for merchant-level detail |
 | Apple Card | ❌ personal card, not in the business books | None seen in last 45 days | **Enable Apple Card statement/transaction emails** (weakest link today) |
 | PayPal | ✅ ("Paypal Bank") | Receipt emails | Secondary |
 
@@ -31,7 +32,8 @@ Notes: Ryan's business domain is **accelerateyourmarketing.com** (not accelerate
 
 ## Ryan's remaining setup items (recommended)
 
-1. **Enable issuer alert emails for the two personal cards** — Chase (per-transaction or daily alerts) and Apple Card (monthly statement + transaction notifications to email). These cards are not in QuickBooks, so email is their only coverage; merchant-level alerts are what let the report name the exact new subscription.
+1. **Apple Card — still the weakest link**: enable monthly statement + transaction emails (iPhone: Wallet → Apple Card → account/statement settings). Not in QuickBooks, and no Apple email has appeared in any connected inbox.
+2. **Chase (optional sharpening)**: paperless statements/notices were enabled 2026-07-23 for both cards (…1811 business, …3413 personal). For merchant-level, same-day signal, also enable per-transaction Account Alerts delivered to email (Chase: Profile & Settings → Alerts).
 
 ## Activation
 
@@ -46,7 +48,7 @@ The Routine is created from a Claude session with the parameters above (name `Mo
 > Procedure:
 > 1. Target month = the full calendar month immediately before today. Baseline = the 3 months before that.
 > 2. Gather data from EVERY source below. If a source is unavailable or errors, note the gap and continue — never fail silently, and never stop at the first source that works.
->    a. Composio Gmail (`COMPOSIO_MULTI_EXECUTE_TOOL` → tool_slug `GMAIL_FETCH_EMAILS`), against each account: `gmail_smur-howard` (ryan@accelerateyourmarketing.com — most card email), `gmail_spire-rosier` (ryansteinolfson@gmail.com — personal-card alerts), `gmail_equity-pig` (ryan@diyai.ai). Queries scoped to the target month (`after:YYYY/MM/DD before:YYYY/MM/DD`): `{from:chase.com from:americanexpress.com from:aexp.com from:wellsfargo.com from:apple.com}`; `subject:(receipt OR subscription OR renewal OR trial OR "price increase")`; `{from:stripe.com from:paypal.com}`. Extract merchant, amount, date, and account hints ("account ending …").
+>    a. Composio Gmail (`COMPOSIO_MULTI_EXECUTE_TOOL` → tool_slug `GMAIL_FETCH_EMAILS`), against each account: `gmail_smur-howard` (ryan@accelerateyourmarketing.com — most card email), `gmail_spire-rosier` (ryansteinolfson@gmail.com — personal-card alerts), `gmail_equity-pig` (ryan@diyai.ai). Queries scoped to the target month (`after:YYYY/MM/DD before:YYYY/MM/DD`) and ALWAYS prefixed with `in:anywhere` — issuer emails have been found in Spam and Trash (Wells Fargo alerts get auto-trashed, and Gmail purges Trash after ~30 days, so early-month alerts may be gone by run day; note this in the report if WF email coverage looks thin): `in:anywhere {from:chase.com from:americanexpress.com from:aexp.com from:wellsfargo.com from:apple.com}`; `in:anywhere subject:(receipt OR subscription OR renewal OR trial OR "price increase")`; `in:anywhere {from:stripe.com from:paypal.com}`. Extract merchant, amount, date, and account hints ("account ending …").
 >    b. Intuit QuickBooks: `company_info`, then `profit_loss_quickbooks_account` covering baseline start through target-month end — watch "Dues & Subscriptions" and every expense category for new lines or jumps >~25% / ~$50 vs. baseline. Covers Wells Fargo Operating, Amex …23000, PayPal (Chase and Apple Card are NOT in QuickBooks). If the target month shows $0 across the board, report "books not yet posted for <month>" (bookkeeping lag — books post on a cadence), fall back to comparing the most recent posted months, and re-query rather than declaring the connection broken.
 >    c. BACKUP — native claude.ai Gmail connector (ryan@diyai.ai): `search_threads` with the same queries if Composio is unavailable.
 > 3. Build a merchant-level list of charges and recurring items. Compare against baseline months; classify each: NEW subscription, price change, duplicate charge, unfamiliar/out-of-pattern charge, or known-recurring (fine).
