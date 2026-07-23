@@ -72,6 +72,14 @@ The Routine is created from a Claude session with the parameters above (name `Mo
 
 The Amex / Chase ×2 / Wells Fargo rosters get added by the first complete monthly run from email + QuickBooks.
 
+## Open items & verifications (checked 2026-07-23)
+
+- ✅ **Ambetter refund check deposited**: WF mobile-deposit alert (found in Trash) confirms $5,763.12 deposited 2026-06-30 into WF account …0899. Note: …0899 ≠ …5623 (the account that funds Apple Card autopay) — Ryan has multiple WF accounts; only "Wells Fargo Operating" is in QBO.
+- ✅ **Google Workspace $9.99 mystery**: two old-business Workspace subscriptions were canceled 2026-07-21 — **convoagent.co** (Business Standard) and **caisey.co** (Business Starter). The Apple Card's $9.99 monthly "GOOGLE *WORKSPACE" (last charged Jul 5) should stop; **Aug/Sep runs must confirm no further $9.99 Workspace charge on Apple Card** — if one appears, a third Workspace is still alive.
+- ⏳ **Spotify**: left Apple Card after May 2026 ($20.75/mo at exit); Ryan believes it moved to Chase. No Spotify receipts in any connected inbox. Confirm via Chase transaction alerts (once enabled) or first run with Chase data.
+- ⚠️ **Google Cloud billing card expiring**: Google Payments notice (2026-07-18, to ryan@accelerateyourmarketing.com): the Amex ••••1004 on "Google Cloud Platform & APIs" expires soon — update it before billing fails.
+- ⏳ **QBO July posting**: still empty as of 2026-07-23 (bookkeeping cadence) — Aug run should treat July-$0 as posting lag per playbook.
+
 ## Operations
 
 - **Change schedule / pause / delete:** ask Claude to `list_triggers`, then `update_trigger` / `delete_trigger` on `Monthly card & subscription watch`.
