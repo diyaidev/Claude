@@ -54,7 +54,7 @@ rather than a separate offer.
 paying customers did each one add in the last 30 days, and which ONE offer would you pick to
 push hard if the other two had to wait 90 days?
 
-**A (2026-07-19):** LSACommand added a couple of new clients in the last 30 days; Agent
+**A (2026-07-19, answered in session):** LSACommand added a couple of new clients in the last 30 days; Agent
 Operations AI added zero. DIY AI is conversational AI and effectively already a component of
 LSACommand, so it isn't a separate push. Ryan's pick: **Agent Operations AI**. Follow-up he
 requested: a review of agentoperationsai.com for setup/conversion problems (delivered in
@@ -89,3 +89,22 @@ glass sticky nav, gradient hero with a live "digital employee" conversation mock
 cards). Still blocked from seeing the current live design: Ryan to either allow
 agentoperationsai.com in the environment network settings or paste a screenshot of the current
 homepage so the design language can be matched before any production deploy.
+
+### Week 2 — 2026-07-23
+
+**Week in review:** the Agent Operations push went live — at least 8 personalized cold emails
+to Atlanta pest control companies on Jul 22 (PestNation, Kuma, Got-Bugs, Peachtree, North
+Fulton, Anthem, BREDA, Bizzy Bee) and 5 to DFW restoration companies on Jul 21, plus a
+referral-partner recap to Nate (Sky Media). No pest control walkthroughs on the calendar yet.
+New this week: a Pay-Per-Call project with Daniel (sellyourcalls.vercel.app) and an
+A Building Co AI walkthrough. The homepage rewrite is still parked in preview awaiting Ryan's
+design input.
+
+**Q2:** This week you put real outbound behind Agent Operations — 13+ personalized emails in
+two days across pest control and restoration — but every one of them lands on a homepage still
+selling the old message, and the rewrite is sitting in preview waiting on you. Which do you
+pick by Friday: give me the current site's design reference (allow agentoperationsai.com in
+the environment network settings, or paste a screenshot here) so the new page ships before
+your next batch — or ship the v2 preview as-is and iterate on the live site?
+
+**A:** _(pending)_
