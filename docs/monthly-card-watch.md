@@ -59,14 +59,18 @@ The Routine is created from a Claude session with the parameters above (name `Mo
 >    - One line: sources checked vs. unavailable (including "QB books posted through <month>").
 > 5. Do NOT send emails or external messages, and do not modify the repository. The Routine's built-in completion notification delivers the summary to Ryan by push + email.
 
-## Subscription baseline (seed — the watch updates this picture each run)
+## Subscription baseline (updated 2026-07-23 from 19-month Apple Card export, Jan 2025–Jul 2026)
 
-| Merchant | Amount | Cadence | Card | First confirmed |
-|---|---|---|---|---|
-| Google Workspace | $9.99 | Monthly | Apple Card | Jul 5, 2026 (CSV) — verify it isn't duplicating a business-paid Workspace plan |
-| Google Cloud | ~$0.35 | Monthly (usage-based) | Apple Card | Jul 1, 2026 (CSV) |
+**Apple Card — active today:** Google Workspace $9.99/mo (since Mar 2025; verify not duplicating a business-paid plan); Google Cloud usage-based pennies; SunPass $30 auto-replenish (tolls, not a subscription).
 
-The full roster (Amex, Chase ×2, WF) gets built on the first complete monthly run from email + QuickBooks and should replace this seed table.
+**Apple Card — ended (history for comparison):**
+- EQT*Ambetter insurance: $31.86/mo through Nov 2025 → **$1,511.31/mo Dec 2025–Apr 2026 (47× jump, 5 months, $7,556.55)** → all 5 refunded 2026-05-19 → Apple issued $5,763.12 credit-balance check 2026-06-25 (Ryan to confirm receipt). The canonical example of the failure mode this watch exists to catch.
+- Spotify: $13.14/mo → $20.75/mo Mar 2026 (+58%, billing day moved) → no charges after May 2026 (confirm cancelled vs. moved cards).
+- Audible: $0.99 promo → $14.95/mo → $9.99 → ended Aug 2025. Way.com WAY+ $2.95/mo ended Jul 2025. AAAaccelerator $197/mo Jan–Mar 2025, one month refunded, ended.
+
+**Watch-style flags from history** (pattern examples): same-day same-amount pairs — American Airlines $302.33×2 (2025-04-17), $211.50×2 (2025-03-23), Blueprint $276.25×2 (2025-03-22), OpenAI $10×2 (2025-04-27).
+
+The Amex / Chase ×2 / Wells Fargo rosters get added by the first complete monthly run from email + QuickBooks.
 
 ## Operations
 
