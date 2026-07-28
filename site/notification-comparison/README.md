@@ -39,7 +39,9 @@ selling point.
 
 ## Before it ships
 
-1. **CTA href** — `#book-a-demo` is a placeholder; point it at the real booking/demo URL.
+1. **Placement** — Ryan wants this in/next to the **response rate** section of
+   lsacommand.com: the speed-to-lead framing feeds directly into response-rate proof.
+2. **CTA href** — `#book-a-demo` is a placeholder; point it at the real booking/demo URL.
 2. **Hosting** — lsacommand.com resolves to Vercel (`cname.vercel-dns.com`), but the
    project isn't in the DIYAi Vercel team this workspace can reach; it's presumably under
    Alex's account. Go-live paths: Alex pastes `section.html` + `assets/` into the site
