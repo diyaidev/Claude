@@ -54,6 +54,19 @@ try {
   page = live.replace(/\b(src|href)="([^"]+)"/g, (m, a, v) =>
     /^(https?:|#|mailto:|tel:|sms:|data:|\/\/)/.test(v) ? m : `${a}="https://lsacommand.com/${v}"`);
   page = page.replace('</title>', () => '</title>\n    <meta name="robots" content="noindex">');
+  // mirror the site's own assets into this deployment so the copy is complete
+  mkdirSync('public', { recursive: true });
+  const rels = new Set();
+  for (const m of page.matchAll(/\b(?:src|href)="https:\/\/lsacommand\.com\/([^"/]+)"/g)) rels.add(m[1]);
+  for (const name of rels) {
+    try {
+      const r = await fetch('https://lsacommand.com/' + name);
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      writeFileSync('public/' + name, Buffer.from(await r.arrayBuffer()));
+      page = page.replaceAll('https://lsacommand.com/' + name, name);
+      console.log('mirrored', name);
+    } catch (e) { console.error('asset skipped (stays absolute):', name, e.message); }
+  }
 } catch (e) {
   console.error('live splice failed, using standalone fallback:', e.message);
   page = [
