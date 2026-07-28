@@ -13,19 +13,29 @@ side comparison … to demonstrate value."
 |---|---|
 | `section.html` | The drop-in fragment. Self-contained: styles scoped under `.lsa-nc`, brand tokens as CSS variables at the top. |
 | `index.html` | Standalone preview page (generated from `section.html` — edit `section.html`, not this). |
-| `assets/` | Redacted web-sized screenshots (760px wide) + `archivo.woff2` (latin subset, variable weight). |
+| `assets/` | Web-sized email images (760px wide, retina sources rendered at 2x) + `archivo.woff2` (latin subset, variable weight). |
 
-## What was redacted (and why)
+## About the email images (v2)
 
-From the raw phone screenshots, blurred before any use:
+Ryan's second set of screenshots (full desktop emails) arrived as chat images rather
+than files, so both emails were rebuilt as pixel-faithful HTML replicas and rendered
+with headless Chromium — visually identical to the originals, crisper than the phone
+screenshots, with **partial blurs per Ryan's spec**: you can tell there's a real phone
+number / name / email, but can't read the whole thing.
 
-- Customer's phone number, full name, and street address (lead PII)
-- The live conversation-takeover link (`lsa.ravu.me/tconv?…` — a working session link)
-- The Google Ads customer ID
+- Phone number: `+1360` visible, remaining digits blurred
+- Lead name: "Vincent" visible, last name blurred (both mentions)
+- Street address blurred; "Henderson Nv" visible, ZIP blurred
+- Takeover link: `lsa.ravu.me/tconv?i=` visible, token blurred
+- Google customer ID: `568-` visible, rest blurred; recipient email `skym…@gmail.com` middle blurred
 
-Left visible deliberately (easy to blur on request): client first name "Hunter",
-"Crystal Cove Pool and Spa", and the "Sky Media Ventures LLC" white-label header —
-the fine print uses the white-label header as a selling point.
+The blurred spans contain **scrambled substitute text underneath**, so the real values
+are unrecoverable even if the blur were reversed. Replica sources:
+`scratchpad/email-lsa.html` + `email-google.html` (session scratchpad; not committed).
+
+Left visible deliberately: "Hunter", "Crystal Cove Pool and Spa", and the
+"Sky Media Ventures LLC" white-label header — the fine print uses white-labeling as a
+selling point.
 
 ## Before it ships
 

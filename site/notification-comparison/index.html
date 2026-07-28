@@ -113,7 +113,7 @@
     .lsa-nc-chip--x { color: var(--nc-x); border: 1px solid currentColor; opacity: 0.85; }
     .lsa-nc-chip--v { color: #fff; background: var(--nc-acc); }
 
-    .lsa-nc-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .lsa-nc-shots { display: grid; grid-template-columns: 1fr; gap: 14px; }
     .lsa-nc-shots figure { display: grid; gap: 10px; }
     .lsa-nc-shots img {
       width: 100%; height: auto; display: block; border-radius: 14px;
@@ -156,10 +156,6 @@
 
     @media (max-width: 860px) {
       .lsa-nc-grid { grid-template-columns: 1fr; }
-      .lsa-nc-shots { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 480px) {
-      .lsa-nc-shots { grid-template-columns: 1fr; }
     }
   </style>
 
@@ -183,14 +179,9 @@
         </header>
         <div class="lsa-nc-shots">
           <figure>
-            <img src="assets/google-lsa-alert-1.png" width="760" height="1545" loading="lazy"
-                 alt="Google Local Services Ads email that says only 'A potential customer called you' with no name or phone number">
-            <figcaption>"A potential customer called you." No name. No number.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/google-lsa-alert-2.png" width="760" height="1545" loading="lazy"
-                 alt="The rest of Google's email: a View Details button that requires logging in to the dashboard">
-            <figcaption>One button — go log in and dig for the details.</figcaption>
+            <img src="assets/google-lsa-alert.png" width="760" height="928" loading="lazy"
+                 alt="Google's entire Local Services Ads notification email: 'A potential customer called you' with a View Details button and no lead information">
+            <figcaption>The entire email: "A potential customer called you." No name, no number — just a button to go log in and dig.</figcaption>
           </figure>
         </div>
         <ul class="lsa-nc-list lsa-nc-list--x">
@@ -207,14 +198,9 @@
         </header>
         <div class="lsa-nc-shots">
           <figure>
-            <img src="assets/lsacommand-alert-1.png" width="760" height="1545" loading="lazy"
-                 alt="LSA Command lead alert email showing lead type, business location, and the caller's phone number, with a takeover link">
-            <figcaption>The lead's number and details, right in the alert.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/lsacommand-alert-2.png" width="760" height="1545" loading="lazy"
-                 alt="The same email continues with the full AI conversation transcript, including the customer's request and address">
-            <figcaption>The full AI conversation, word for word.</figcaption>
+            <img src="assets/lsacommand-alert.png" width="760" height="1295" loading="lazy"
+                 alt="The complete LSA Command alert email: conversation takeover link, lead type, location, the caller's phone number, and the full AI conversation transcript">
+            <figcaption>The lead's number and details — plus the full AI conversation, word for word.</figcaption>
           </figure>
         </div>
         <ul class="lsa-nc-list lsa-nc-list--v">
@@ -237,8 +223,8 @@
     </div>
 
     <p class="lsa-nc-fine">
-      Real notifications received July 2026, shown side by side. Customer details blurred for
-      privacy. LSA Command alerts are white-labeled — the alert above carries one of our partner
+      Real notifications from July 2026, shown side by side — lead details partially blurred for
+      privacy. LSA Command alerts are white-labeled: the alert above carries one of our partner
       agencies' branding, and yours would carry yours.
     </p>
   </div>
