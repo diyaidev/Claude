@@ -56,16 +56,23 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 
 | # | Item | Owner | Status |
 |---|---|---|---|
-| 1 | Mark up recruiting copy + intake form (payout language, Dalton's rules, red-flag gaps) | Daniel | sent Jul 21, awaiting |
-| 2 | Formalize the sub-affiliate agreement (structure agreed verbally Jul 21) | Ryan + Daniel | open |
+| 1 | Mark up recruiting copy + intake form (payout language, Dalton's rules, red-flag gaps) | Daniel | folded into the agreement negotiation |
+| 2 | Sub-affiliate agreement | **Ryan** | **final version received Jul 29 pm — awaiting Ryan's signature.** Negotiated across two redrafts: entity + Section 5 cure-window edits in, 90/10 split item resolved better than asked, categories open after one completed pay cycle |
 | 3 | Reconcile payout copy vs agreed ranges (see ⚠️ above) | Ryan | open |
 | 4 | Ask Dalton in WhatsApp: pool-contractor buyers in Zion? | Ryan | open |
 | 5 | Get launch zips / buyer-matrix coverage for target categories | Ryan (via Dalton) | open |
 | 6 | First recruiting channel live — Skool post is fastest (own audience) | Ryan | blocked on 1–3 |
 | 7 | First-20 seller co-reviews + Dalton interviews | Ryan + Daniel | not started |
+| 8 | 1:1 seller outreach (warm, hand-picked rank-and-rent operators) | Ryan | 4 sent Jul 24–26 — Ippei (100+ calls/day, 150+ sites), Jesse/RankExpand (+follow-up Jul 28), Jacky/Indexsy, Nick/DigitalLandlords — 0 replies yet |
 
 ## Weekly scoreboard (refreshed each Thursday)
 
 | Week of | Applications | Screened | To Daniel | Live sellers | Calls delivered | Qualified % | Payout $ |
 |---|---|---|---|---|---|---|---|
 | 2026-07-23 | 0 | 0 | 0 | 0 | 0 | — | $0 |
+| 2026-07-30 | 0 | 0 | 0 | 0 | 0 | — | $0 |
+
+*Week of Jul 30 context: agreement unsigned (final draft arrived Jul 29 evening); four warm
+1:1 seller conversations open, none replied; Skool post not yet live; Ryan reported himself
+"fully green-lit on my side" after the Aranza conversation (Jul 23) and sent Daniel a
+supply-lanes memo the same day.*
