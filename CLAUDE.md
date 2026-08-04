@@ -11,6 +11,12 @@
 - **Alex Contes** — alex@diyai.ai (DIYAI team; CC on all client communications)
 - **Chris Monkaitis ("Chris M")** — chris@monk-marketing.com (Monk Marketing; white-label partner being onboarded; recurring calls Wednesdays 11 AM ET)
 
+## LSA Command Loop
+
+- Autonomous spec → build → review loop for the LSA command software (`diyaidev/lsa-command`), modeled on Finn's "Fin Loop". Full playbook: `docs/lsa-command-loop.md`. Skills: `lsa-spec` (morning interview → GitHub issues), `lsa-build` (builds next backlog issue on a `loop/` branch), `lsa-review` (independently tests, stages a **draft PR**, posts to `#lsa-merge-ready` in Slack).
+- **Hard rules:** the live platform (default branch) never changes without Ryan's 🚀 reaction in Slack; anything touching ad spend, budgets, or billing is never built autonomously (`loop:needs-human`).
+- Morning kickoff: Ryan runs `/lsa-spec` with his ideas, then starts `/loop 30m run the lsa-build skill, then the lsa-review skill`. Evening: Ryan reacts 🚀 (merge) or 👎 (send back) in `#lsa-merge-ready`. "Process the LSA approvals" = run `lsa-review` Pass 1 immediately.
+
 ## Scheduled jobs
 
 - **Monthly card & subscription watch** — 1st of each month (~8 AM PT): reviews prior-month spend across Chase credit card, Apple Card, Amex, and Wells Fargo debit; flags new/changed subscriptions and odd charges; notifies Ryan via push + email. Playbook and current status: `docs/monthly-card-watch.md`. If Ryan says "run the card watch now", follow that playbook immediately.
