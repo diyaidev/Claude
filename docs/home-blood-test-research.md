@@ -135,13 +135,26 @@ So "the most comprehensive B coverage possible" realistically means **B12, folat
 
 ---
 
+## Local to you — Palm City, FL (34990)
+
+The "quick lab visit" tradeoff is unusually favorable where you live, which reshapes the recommendation:
+
+- **Quest Diagnostics is *in* Palm City** — 2885 Cafe Court, Palm City, FL 34990 (772‑286‑2024), roughly a 5‑minute drive. There's another Quest ~5.5 mi away in Stuart (900 E Ocean Blvd).
+- **LabCorp Stuart** — 858 SW Federal Hwy, Stuart, FL 34994, ~5–6 miles (mornings only, Mon–Fri, closed weekends).
+- **JustLabs works *exclusively with Quest*** — so its **$64 Vitamin & Mineral Panel** would be drawn at the Quest right here in Palm City, no appointment needed, results in ~24–48h.
+- Bonus: Quest offers a dedicated **Micronutrients B‑Vitamin panel**, so the Quest route can capture more of the B‑complex than any at-home kit — orderable via JustLabs or questhealth.com.
+
+**What this means:** the lab route costs you almost nothing in convenience — a 5‑minute drive 4× a year instead of mailing a kit and waiting 7–10 days. It's actually *faster, cheaper, and more comprehensive* than self-draw for someone in Palm City. The only real "cost" vs. self-draw is the needle and the short trip.
+
 ## My recommendation
 
-- **Want it truly hands-off and self-drawn, one kit, all your nutrients, quarterly?** → **SiPhox Health**, Longevity Essentials quarterly (or Ultimate 360 twice a year). Best self-draw fit, ~$400–500/yr. Start at [siphoxhealth.com](https://siphoxhealth.com/).
-- **Want the cheapest, most comprehensive, most flexible — and don't mind a 10-minute lab stop?** → **JustLabs $64 panel** (or Request A Test's micronutrient panel if you want B1/B6), ordered one-off each quarter. ~$256/yr, no subscription, and it actually covers *more* than the self-draw kits.
+Given your stated priorities — you **really value at-home self-draw**, and you'll trade for savings **if the lab is close** (it is: 5 minutes) — it comes down to what "at-home" means to you:
+
+- **If self-draw means "I don't want to deal with labs, needles, or waiting rooms at all"** → **SiPhox Health**, Longevity Essentials **quarterly** (or Ultimate 360 twice a year). One painless arm-device kit covers all your nutrients; ~$400–500/yr. [siphoxhealth.com](https://siphoxhealth.com/)
+- **If self-draw was mostly about convenience + cost** → the **Quest in Palm City wins**: order the **JustLabs $64 panel** (vitamin D, B12, folate, iron/TIBC, ferritin, magnesium), 5-minute drive, results in 1–2 days, ~$256/yr — and add Quest's **B‑Vitamin panel** if you want the fuller B picture. Cheaper, faster, and more comprehensive than any home kit.
 - **Just spot-checking one or two markers at home?** → **Everlywell** B Vitamins + Vitamin D kits.
 
-Given your goals as stated (self-draw + comprehensive + cheap + quarterly), **SiPhox is the answer if self-draw is the hard requirement**; **JustLabs/Request A Test is the smarter-value answer if you'll accept a quick lab visit.** I'd genuinely consider the lab-draw route — it beats self-draw on every axis except the walk to the draw station, and it's the only way to see your full B-vitamin and iron picture.
+**My honest take for your situation:** since there's a Quest 5 minutes from your door, the usual reason to pay extra for self-draw (avoiding a lab trip) mostly evaporates. I'd lean **JustLabs at the Palm City Quest** for the value and the better B-vitamin coverage — but if the appeal of self-draw is genuinely "never leave the house / no needles-at-a-lab," **SiPhox** is the right call and a great product. Both are solid; pick based on how much the 5-minute trip actually bothers you.
 
 ---
 
@@ -156,5 +169,6 @@ Given your goals as stated (self-draw + comprehensive + cheap + quarterly), **Si
 - [Request A Test — Ultimate Micronutrient Panel (incl. B1, B6)](https://requestatest.com/vitamin-nutrition-ultimate-panel-vitamin-b12-folate-D-K1-A-C-E-B1-B6-CMP-Zinc-Magnesium-Omega-3) · [Request A Test — Comprehensive Vitamin/Micronutrient](https://requestatest.com/vitamin-nutrition-panel-comprehensive-vitamin-b12-folate-k1-A-C-E-CMP-Zinc-Iron-Ferritin)
 - [Best at-home biomarker tests 2026 — Vital Signs Today](https://medicalnewstoday.us/best-at-home-biomarker-tests/) · [Best at-home health test kits — Jinfiniti](https://www.jinfiniti.com/best-at-home-health-test-kits/) · [Blood biomarker services compared — Outliyr](https://outliyr.com/best-blood-biomarker-testing-services)
 - [Vitamin B test overview — Testing.com](https://www.testing.com/tests/b-vitamins/) · [Vitamin deficiency tests — Medical News Today](https://www.medicalnewstoday.com/articles/vitamin-deficiency-test)
+- Local labs: [Quest Diagnostics — Palm City (2885 Cafe Court)](https://locations.questdiagnostics.com/fl/palm-city) · [Quest Diagnostics — Stuart](https://www.questdiagnostics.com/locations/detail.html/STU/34994/75/1) · [LabCorp — Stuart (858 SW Federal Hwy)](https://locations.labcorp.com/fl/stuart/22947/) · [JustLabs — find a lab (Quest network)](https://justlabs.health/find-lab) · [Quest Micronutrients B-Vitamin Panel](https://testdirectory.questdiagnostics.com/test/test-detail/10195/micronutrients-b-vitamin-panel?p=r&cc=MASTER)
 
 *Note: at-home testing pricing and panel contents change frequently and often run promotions — confirm current price and exact biomarker list on the provider's site at checkout. This is research to inform your choice, not medical advice; review results with your clinician.*
