@@ -16,7 +16,7 @@
 - Autonomous spec → build → review loop for the LSA command software (`diyaidev/lsa-command`), modeled on Finn's "Fin Loop". Full playbook: `docs/lsa-command-loop.md`. Skills: `lsa-spec` (morning interview → GitHub issues), `lsa-build` (builds next backlog issue on a `loop/` branch), `lsa-review` (independently tests, stages a **draft PR**, posts to `#lsa-merge-ready` in Slack).
 - **Hard rules:** the live platform (default branch) never changes without Ryan's 🚀 reaction in Slack; anything touching ad spend, budgets, or billing is never built autonomously (`loop:needs-human`).
 - Morning kickoff: Ryan runs `/lsa-spec` with his ideas, then starts `/loop 30m run the lsa-build skill, then the lsa-review skill`. Evening: Ryan reacts 🚀 (merge) or 👎 (send back) in `#lsa-merge-ready`. "Process the LSA approvals" = run `lsa-review` Pass 1 immediately.
-- **All loop questions to Ryan go via Telegram** (his main comms channel): Composio → `TELEGRAM_SEND_MESSAGE` / poll `TELEGRAM_GET_UPDATES`, connection `telegram_remble-hooper`; chat_id + mechanics in `docs/lsa-command-loop.md`. Fall back to in-session questions only if Telegram is unreachable.
+- **All loop questions to Ryan go via Telegram** (his main comms channel): Composio → `TELEGRAM_SEND_MESSAGE` / poll `TELEGRAM_GET_UPDATES`, Telegram connection alias `ryan-loop`; chat_id + mechanics in `docs/lsa-command-loop.md`. Fall back to in-session questions only if Telegram is unreachable.
 
 ## Scheduled jobs
 

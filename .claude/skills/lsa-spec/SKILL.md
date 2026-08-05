@@ -23,7 +23,7 @@ GitHub issues so the Build and Review loops can work all day without him.
 
 **All interview questions go to Ryan on Telegram** — his main comms channel.
 Send via Composio (`COMPOSIO_MULTI_EXECUTE_TOOL` → `TELEGRAM_SEND_MESSAGE`,
-connection `telegram_remble-hooper`; chat_id in `docs/lsa-command-loop.md`).
+Telegram connection alias `ryan-loop`; chat_id in `docs/lsa-command-loop.md`).
 Collect his replies by polling `TELEGRAM_GET_UPDATES` (track `offset` =
 highest update_id + 1 to avoid re-reading). Batch 3–5 numbered questions per
 message so he can answer in one reply; keep messages plain text. If Telegram

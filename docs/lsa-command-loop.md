@@ -43,7 +43,7 @@ Side tracks: loop:blocked (builder stuck — needs Ryan's input)
 spec interviews, build blockers, review judgment calls. Mechanics:
 
 - Send: Composio `COMPOSIO_MULTI_EXECUTE_TOOL` → `TELEGRAM_SEND_MESSAGE`,
-  connection `telegram_remble-hooper` (alias `ryan-loop`).
+  the `ryan-loop` Telegram connection.
 - Receive: poll `TELEGRAM_GET_UPDATES`, advancing `offset` to highest
   update_id + 1 so replies aren't double-processed.
 - Ryan's chat_id: _recorded here after first contact — connection setup in
