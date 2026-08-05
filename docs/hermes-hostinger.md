@@ -1,8 +1,12 @@
 # Hermes Agent on Hostinger — ChatGPT-Subscription Build
 
-**Status:** Hostinger connected & account surveyed (2026-08-05). Target VPS identified — install proceeds on the existing OS, no reinstall. Next: Ryan's ~10-minute terminal session (Phases 2–3).
+**Status:** ✅ LIVE (2026-08-05). Hermes v0.20.0 on srv1837504, engine GPT-5.6 Sol via ChatGPT-subscription Codex OAuth, reasoning medium, Telegram gateway restored, all services boot-persistent. Verified end-to-end (test message delivered + live `ENGINE-OK` inference).
 **Last updated:** 2026-08-05
 **Owner:** Ryan · maintained in the Claude workspace
+
+## What was actually found (major correction to earlier assumption)
+
+Hermes was **already installed on this VPS since 2026-07-17** (not a fresh box): full config, SOUL.md ("one of Ryan's three agents"), credential store, and Telegram wiring. Timeline reconstructed from the box: gateway systemd unit crashed **Jul 27** (exit 1, never restarted — unit was not boot-enabled), Telegram keys were disabled **Jul 29** (`DISABLED_20260729_*` prefixes), and the main model had been switched to grok-4.5/xAI after the Anthropic API credential exhausted (the "$200/day" burn). The box also runs live business crons (AgentOps outreach runner, reply triage, Gmail brain) — untouched by this work.
 
 ## Live account survey (2026-08-05, via Hostinger API)
 
@@ -41,33 +45,23 @@ Reference point from the source video: the creator was spending ~$200/day on Cla
 
 ## Setup runbook
 
-### Phase 0 — Access ✅ done 2026-08-05
-Hostinger API token connected via Composio (account `hostinger_suid-hamose`; Composio "Enhanced Controls" had to be disabled in the Composio org settings for tool execution to work). Still open: confirm ChatGPT plan tier (Plus $20 / Pro) — decides Sol vs Terra/Luna default above.
+### As-built record (all executed 2026-08-05 by Claude over SSH)
 
-### Phase 1 — Hermes install on the existing VPS (no reinstall)
-Run in hPanel → VPS → srv1837504 → **Browser Terminal** (logs in as root; no SSH setup needed). The one-click template route was dropped — no Hermes template exists in this account's catalog, and installing on the running OS avoids a wipe.
+1. **Access:** Hostinger API token connected via Composio (Composio org "Enhanced Controls" had to be disabled for tool execution). SSH: ed25519 key `claude-ryan-workspace` (registered on the Hostinger account, id 553217) authorized on the VPS by Ryan via Browser Terminal; private key lives in the Composio sandbox (`/mnt/files/keys/`).
+2. **Update:** official installer re-run over the existing install → Hermes v0.20.0. Log: `/root/hermes-install.log`.
+3. **Engine switch** in `/root/.hermes/config.yaml`: `model.provider: xai-oauth → openai-codex`, `model.default: grok-4.5 → gpt-5.6-sol`, removed stale `base_url: https://api.x.ai/v1`, `agent.reasoning_effort: xhigh → medium`. **No ChatGPT sign-in was needed — a valid Codex OAuth credential already existed** (`hermes auth status openai-codex` → logged in). If it ever expires: `hermes auth add openai-codex` (device code).
+4. **Telegram restored** in `/root/.hermes/.env`: stripped `DISABLED_20260729_` off `TELEGRAM_BOT_TOKEN`, `TELEGRAM_ALLOWED_USERS`, `TELEGRAM_HOME_CHANNEL` (same bot/token Ryan supplied — they matched). Old `claude-telegram-listener` unit confirmed dead (disabled, script gone) → no getUpdates conflict.
+5. **Services:** `hermes gateway restart` (auto-refreshed the outdated unit), `systemctl --user restart hermes-serve hermes-dashboard`; **`hermes-gateway` was boot-disabled — now enabled** (root cause of the July outage persisting). All three active + enabled, `Linger=yes`.
+6. **Verification:** `hermes status` → Model `gpt-5.6-sol`, Provider `OpenAI Codex`; `hermes send -t telegram …` delivered to home channel (chat 6767234485); one-shot inference `hermes chat -q` returned `ENGINE-OK` in 7s through the subscription.
 
-```bash
-apt update && apt install -y git curl xz-utils
-curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
-```
+Config backups on the VPS: `/root/.hermes/config.yaml.bak-claude-*`, `/root/.hermes/.env.bak-claude-*`.
 
-### Phase 2 — Engine auth (ChatGPT subscription)
-```bash
-hermes model          # → type "codex" → OpenAI Codex → GPT-5.6 Sol
-```
-Device-code flow: Hermes prints a URL + code; Ryan opens it on his phone/laptop, signs in with the ChatGPT account, enters the code. ~2 minutes, one time. If auth ever expires: `hermes auth add openai-codex`.
-
-### Phase 3 — Always-on + Telegram
-```bash
-hermes gateway setup  # connect Telegram (also supports Discord, Slack, WhatsApp, Signal, email)
-```
-Telegram needs a bot token from @BotFather (60-second job). Then send `/reasoning medium` in the Telegram chat.
-
-### Phase 4 — Hardening & ops
-- SSH key auth only (register keys via Hostinger API once connected); disable password login.
-- Keep `hermes dashboard` bound to localhost — access via SSH tunnel, never exposed publicly.
-- `hermes update` periodically; credentials persist in `~/.hermes/`.
+### Open items / ops notes
+- **Pending kernel reboot** ("System restart required" MOTD). Everything is boot-persistent now; reboot at a quiet hour (avoid weekday 10:00 UTC outreach run and :11/:41 triage slots). ~1 min downtime.
+- Hermes MCP server `linear` fails OAuth in background context (pre-existing, harmless warning). Fix only if needed: `hermes mcp login linear` in an interactive SSH session.
+- Anthropic credentials in Hermes remain exhausted/stale — irrelevant now (fallback chain: codex/gpt-5.5 → anthropic → nous). Consider pruning the fallback chain later.
+- Dashboard stays bound to 127.0.0.1:9120, serve on 127.0.0.1:9119 — not publicly exposed; keep it that way.
+- On the $20 Plus plan, if Sol rate-limits: drop to `gpt-5.6-terra` or reasoning `low` (one-line config change).
 
 ## Use-case backlog (post-setup)
 
@@ -76,12 +70,16 @@ From the video, adapted to Ryan's world:
 2. **Home AI lab** — Hermes inventories a machine's hardware, finds the best local models on Hugging Face for it, and reports use cases. Prompt from the video: *"Check out the hardware and specs on my computer, then go through Hugging Face and find the best local AI model I can run on it, then list the use cases I can do with that model."*
 3. **Unity game studio** — Hermes drives Unity end-to-end (assets, characters, lighting) if Ryan ever wants to play with this.
 
-## What Claude still needs from Ryan
+## Checklist — final state
 
 - [x] Hostinger connected via Composio (2026-08-05)
-- [ ] ChatGPT plan tier confirmation (Plus vs Pro)
-- [ ] ~10-minute Browser Terminal session: paste Phase 1 commands, then device-code sign-in (Phase 2)
-- [ ] Telegram bot token from @BotFather (or 60 seconds to create one together)
+- [x] SSH access authorized (key paste by Ryan)
+- [x] Hermes updated + engine switched to GPT-5.6 Sol on ChatGPT subscription (no sign-in needed — existing valid Codex OAuth)
+- [x] Telegram re-enabled with Ryan's existing bot; test message delivered
+- [x] Services active + boot-enabled
+- [ ] ChatGPT plan tier confirmation (Plus vs Pro) — only matters if Sol rate-limits
+- [ ] Reboot for pending kernel updates at a quiet hour
+- [ ] Build first cron use cases (site/price watchers) — next session
 
 ## Sources
 
