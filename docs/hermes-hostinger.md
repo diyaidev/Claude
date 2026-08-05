@@ -77,8 +77,8 @@ From the video, adapted to Ryan's world:
 - [x] Hermes updated + engine switched to GPT-5.6 Sol on ChatGPT subscription (no sign-in needed — existing valid Codex OAuth)
 - [x] Telegram re-enabled with Ryan's existing bot; test message delivered
 - [x] Services active + boot-enabled
-- [ ] ChatGPT plan tier confirmation (Plus vs Pro) — only matters if Sol rate-limits
-- [ ] Reboot for pending kernel updates at a quiet hour
+- [x] ChatGPT plan: **Pro ($100)** (upgraded 2026-08-05) — Sol primary is the right call; fallback chain leads with `gpt-5.6-terra` (`gpt-5.6-sol-pro` exists in the catalog if Ryan ever wants max-compute mode; slower per turn)
+- [x] Rebooted 2026-08-05 19:48 UTC — new kernel 6.8.0-136, reboot-required cleared, all three services auto-started (persistence fix proven)
 - [ ] Build first cron use cases (site/price watchers) — next session
 
 ## Sources
