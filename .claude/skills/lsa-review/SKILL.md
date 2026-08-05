@@ -62,6 +62,13 @@ reaction merges; anyone else's is ignored.
    - Comment on the issue with the PR link and the Slack message timestamp
      (Pass 1 needs it to find reactions later).
 
+## Questions
+
+Any question for Ryan that a review raises (ambiguous acceptance criteria,
+judgment calls) goes to him on **Telegram** — his main comms channel
+(`TELEGRAM_SEND_MESSAGE` via Composio, chat_id in `docs/lsa-command-loop.md`)
+— not as a silent issue comment he won't see.
+
 ## Never
 
 - Merge without Ryan's 🚀 — no exceptions, including "obvious" fixes.

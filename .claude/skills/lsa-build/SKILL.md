@@ -40,7 +40,9 @@ end the run.
    and exercise the changed flow yourself.
 4. Work every acceptance criterion until it genuinely passes. If truly stuck
    after multiple approaches: label `loop:blocked`, comment what you tried and
-   what's missing, end the run.
+   what's missing, and send Ryan a short Telegram message (his main comms
+   channel — `TELEGRAM_SEND_MESSAGE` via Composio, chat_id in
+   `docs/lsa-command-loop.md`) with the blocking question. End the run.
 
 ## Step 3 — Hand off to review
 

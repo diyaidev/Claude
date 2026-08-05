@@ -37,6 +37,20 @@ Side tracks: loop:blocked (builder stuck — needs Ryan's input)
   staging section. Ryan's 🚀 flips it to ready and merges it. 👎 sends it back
   to the build queue with his feedback.
 
+### Questions (Telegram — Ryan's main comms channel)
+
+**Every question the loop has for Ryan goes to Telegram** (decided 2026-08-05):
+spec interviews, build blockers, review judgment calls. Mechanics:
+
+- Send: Composio `COMPOSIO_MULTI_EXECUTE_TOOL` → `TELEGRAM_SEND_MESSAGE`,
+  connection `telegram_remble-hooper` (alias `ryan-loop`).
+- Receive: poll `TELEGRAM_GET_UPDATES`, advancing `offset` to highest
+  update_id + 1 so replies aren't double-processed.
+- Ryan's chat_id: _recorded here after first contact — connection setup in
+  progress as of 2026-08-05._
+- Batch 3–5 numbered questions per message; plain text (no parse_mode).
+- Fallback if Telegram is unreachable: `AskUserQuestion` in the session.
+
 ### Approvals (Slack)
 
 Channel: `#lsa-merge-ready` (created on first review run if missing). Each
@@ -45,6 +59,9 @@ PR/issue links. Reactions — **from Ryan only**:
 
 - 🚀 → merge it (squash), close the issue, ✅ confirmation in thread
 - 👎 / ❌ → back to the build loop with his feedback
+
+_Open question to Ryan (asked in the Telegram kickoff): move merge approvals
+to Telegram too (reply "merge #N"), or keep the Slack 🚀 flow?_
 
 ## Daily rhythm (morning kickoff, all-day loop)
 
@@ -79,6 +96,10 @@ PR/issue links. Reactions — **from Ryan only**:
 
 ## First-run setup checklist (needs Ryan present once, to approve connector prompts)
 
+- [x] Telegram connection initiated via Composio (2026-08-05): Ryan creates a
+      bot with @BotFather, pastes the token into the Composio connect link,
+      then messages the bot once so it can reply. Record the chat_id above
+      when the first message lands.
 - [ ] Merge this PR so the skills land on `main` and load in future sessions.
 - [ ] First `/lsa-spec` run: approve the `add_repo` prompt for
       `diyaidev/lsa-command` (push access) — subsequent sessions reuse it.

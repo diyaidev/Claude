@@ -19,12 +19,19 @@ GitHub issues so the Build and Review loops can work all day without him.
    `loop:backlog`, `loop:building`, `loop:ready-for-review`, `loop:merge-ready`,
    `loop:blocked`, `loop:needs-human`.
 
-## Step 1 — Interview Ryan
+## Step 1 — Interview Ryan (over Telegram)
+
+**All interview questions go to Ryan on Telegram** — his main comms channel.
+Send via Composio (`COMPOSIO_MULTI_EXECUTE_TOOL` → `TELEGRAM_SEND_MESSAGE`,
+connection `telegram_remble-hooper`; chat_id in `docs/lsa-command-loop.md`).
+Collect his replies by polling `TELEGRAM_GET_UPDATES` (track `offset` =
+highest update_id + 1 to avoid re-reading). Batch 3–5 numbered questions per
+message so he can answer in one reply; keep messages plain text. If Telegram
+is down or unconnected, fall back to `AskUserQuestion` in the session.
 
 Ryan gives a rough idea ("fix the flaky client table", "polish the dashboard").
-Interview him with `AskUserQuestion` (up to 4 questions per round, multiple
-rounds) until you are confident you could build it without asking anything else.
-Typically 8–15 questions. Cover, per idea:
+Interview him until you are confident you could build it without asking
+anything else. Typically 8–15 questions. Cover, per idea:
 
 - **Problem**: what's broken/missing, where in the app, who hits it.
 - **Expected behavior**: exactly what "fixed/done" looks like.
@@ -34,7 +41,8 @@ Typically 8–15 questions. Cover, per idea:
 - **Scope limits**: what is explicitly NOT part of this (non-goals).
 
 Prefer concrete options over open questions. When confident, restate the full
-plan in plain language and get one final confirmation before filing anything.
+plan in plain language in a Telegram message and get one final "yes" reply
+before filing anything.
 
 ## Step 2 — File the issues
 
