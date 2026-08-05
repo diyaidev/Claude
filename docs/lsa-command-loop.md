@@ -116,3 +116,12 @@ to Telegram too (reply "merge #N"), or keep the Slack 🚀 flow?_
   approvals: Slack 🚀 · cadence: morning kickoff + all-day 30m loop · first
   focus: bug fixes & polish). Skills staged for review; nothing run against
   the live repo yet.
+- **2026-08-05** — Kickoff spec interview done. First backlog drafted in
+  `docs/lsa-command-backlog.md` (P1: continuous health monitoring + alerts —
+  "clients find breakage before we do" is the top pain; P2: rankings tracked
+  over time in results/dashboard/monthly report). **Blocked on two one-time
+  approvals from Ryan:** (1) the `add_repo` permission prompt for
+  `diyaidev/lsa-command` — until approved, issues can't be filed and the loop
+  can't build; (2) the Telegram bot token paste for the `ryan-loop`
+  connection. Q0 (move merge approvals from Slack 🚀 to Telegram?) still
+  unanswered — Slack stays until Ryan says otherwise.
