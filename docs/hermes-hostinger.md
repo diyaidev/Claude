@@ -1,8 +1,16 @@
 # Hermes Agent on Hostinger — ChatGPT-Subscription Build
 
-**Status:** Playbook ready — blocked on Hostinger account access (see checklist below)
-**Last updated:** 2026-08-04
+**Status:** Hostinger connected & account surveyed (2026-08-05). Target VPS identified — install proceeds on the existing OS, no reinstall. Next: Ryan's ~10-minute terminal session (Phases 2–3).
+**Last updated:** 2026-08-05
 **Owner:** Ryan · maintained in the Claude workspace
+
+## Live account survey (2026-08-05, via Hostinger API)
+
+- **VPS:** `srv1837504.hstgr.cloud` (id 1837504) — KVM 2, 2 vCPU / 8 GB RAM / 100 GB disk, IPv4 31.97.14.109, **running**, created 2026-07-17
+- **OS:** plain Ubuntu 24.04 LTS (template 1077) — no agent stack installed yet
+- **Subscription:** KVM 2 active, $203.88/yr, renews 2027-07-03 — no purchase needed
+- **Template catalog:** all 93 checked — **no Hermes Agent one-click template exists in this account's API catalog** (closest: NemoClaw, n8n, Claude Code, Codex). Decision: install Hermes directly on the running Ubuntu 24.04 with the official installer — avoids wiping the box and skips the template dependency entirely.
+- Composio's Hostinger toolkit is read-only for VPS ops (list/inspect); OS-level work happens in hPanel's Browser Terminal.
 
 ---
 
@@ -33,15 +41,14 @@ Reference point from the source video: the creator was spending ~$200/day on Cla
 
 ## Setup runbook
 
-### Phase 0 — Access (blocked on Ryan)
-1. Connect the Hostinger account to this workspace via the Composio link Claude generates (it asks for a Hostinger API token: hPanel → Account → API). Links expire in 10 minutes — ask Claude for a fresh one when ready.
-2. Confirm which ChatGPT plan is active (Plus $20 / Pro) — decides Sol vs Terra/Luna default above.
+### Phase 0 — Access ✅ done 2026-08-05
+Hostinger API token connected via Composio (account `hostinger_suid-hamose`; Composio "Enhanced Controls" had to be disabled in the Composio org settings for tool execution to work). Still open: confirm ChatGPT plan tier (Plus $20 / Pro) — decides Sol vs Terra/Luna default above.
 
-### Phase 1 — VPS + Hermes install
-Preferred: Hostinger's **one-click Hermes Agent Docker template** (hPanel → VPS → Operating System → Applications → Hermes Agent). KVM 2 is the commonly recommended plan; any plan with ≥2 GB RAM is fine. Manual fallback on any Ubuntu VPS:
+### Phase 1 — Hermes install on the existing VPS (no reinstall)
+Run in hPanel → VPS → srv1837504 → **Browser Terminal** (logs in as root; no SSH setup needed). The one-click template route was dropped — no Hermes template exists in this account's catalog, and installing on the running OS avoids a wipe.
 
 ```bash
-sudo apt update && sudo apt install -y git curl xz-utils
+apt update && apt install -y git curl xz-utils
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 ```
 
@@ -71,9 +78,9 @@ From the video, adapted to Ryan's world:
 
 ## What Claude still needs from Ryan
 
-- [ ] Click a fresh Hostinger connect link (Claude regenerates on request)
+- [x] Hostinger connected via Composio (2026-08-05)
 - [ ] ChatGPT plan tier confirmation (Plus vs Pro)
-- [ ] 2-minute device-code sign-in when Phase 2 runs
+- [ ] ~10-minute Browser Terminal session: paste Phase 1 commands, then device-code sign-in (Phase 2)
 - [ ] Telegram bot token from @BotFather (or 60 seconds to create one together)
 
 ## Sources
