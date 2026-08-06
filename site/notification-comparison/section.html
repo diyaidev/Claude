@@ -1,0 +1,213 @@
+<!-- ============================================================
+  LSA Command — "Notification comparison" section
+  Drop-in fragment for lsacommand.com.
+
+  • Self-contained: all styles are scoped under .lsa-nc, tokens are
+    CSS custom properties on the section root — override them to
+    match the host site's brand.
+  • Assets are referenced relative to this file (assets/…). Keep the
+    folder together or update the paths.
+  • Point the CTA (href="#book-a-demo") at the site's real booking link.
+  • Light by default; adapts automatically if the host page uses
+    prefers-color-scheme dark. Delete the dark block to pin it light.
+============================================================= -->
+<section class="lsa-nc" id="notification-comparison" aria-label="LSA Command lead alerts compared with Google's default notifications">
+  <style>
+    .lsa-nc {
+      --nc-bg: #f6f8f7;
+      --nc-ink: #14201c;
+      --nc-mut: #52605b;
+      --nc-card: #ffffff;
+      --nc-line: #dbe3df;
+      --nc-acc: #0e7c5b;
+      --nc-acc-deep: #0a5c44;
+      --nc-x: #a8512d;
+      --nc-shadow: 0 18px 44px -20px rgba(16, 42, 34, 0.28);
+      --nc-radius: 20px;
+      background: var(--nc-bg);
+      color: var(--nc-ink);
+      font-family: "Archivo", "Helvetica Neue", Arial, system-ui, sans-serif;
+      line-height: 1.5;
+      padding: clamp(56px, 8vw, 104px) 20px;
+    }
+    @media (prefers-color-scheme: dark) {
+      .lsa-nc {
+        --nc-bg: #0f1613;
+        --nc-ink: #e7edea;
+        --nc-mut: #9aa8a2;
+        --nc-card: #161f1b;
+        --nc-line: #26322d;
+        --nc-acc: #31a57f;
+        --nc-acc-deep: #4cbf98;
+        --nc-x: #c97e57;
+        --nc-shadow: 0 18px 44px -18px rgba(0, 0, 0, 0.55);
+      }
+    }
+    :root[data-theme="dark"] .lsa-nc {
+      --nc-bg: #0f1613; --nc-ink: #e7edea; --nc-mut: #9aa8a2; --nc-card: #161f1b;
+      --nc-line: #26322d; --nc-acc: #31a57f; --nc-acc-deep: #4cbf98; --nc-x: #c97e57;
+      --nc-shadow: 0 18px 44px -18px rgba(0, 0, 0, 0.55);
+    }
+    :root[data-theme="light"] .lsa-nc {
+      --nc-bg: #f6f8f7; --nc-ink: #14201c; --nc-mut: #52605b; --nc-card: #ffffff;
+      --nc-line: #dbe3df; --nc-acc: #0e7c5b; --nc-acc-deep: #0a5c44; --nc-x: #a8512d;
+      --nc-shadow: 0 18px 44px -20px rgba(16, 42, 34, 0.28);
+    }
+    .lsa-nc * { margin: 0; padding: 0; box-sizing: border-box; }
+    .lsa-nc-wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: clamp(36px, 5vw, 56px); }
+
+    .lsa-nc-head { max-width: 720px; display: grid; gap: 18px; }
+    .lsa-nc-eyebrow {
+      font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+      font-size: 12.5px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--nc-acc); font-weight: 600;
+    }
+    .lsa-nc-head h2 {
+      font-size: clamp(30px, 4.6vw, 50px); line-height: 1.06; letter-spacing: -0.015em;
+      font-weight: 800; text-wrap: balance;
+    }
+    .lsa-nc-head h2 em { font-style: normal; color: var(--nc-acc); }
+    .lsa-nc-sub { font-size: clamp(16px, 1.6vw, 18.5px); color: var(--nc-mut); max-width: 62ch; }
+    .lsa-nc-sub strong { color: var(--nc-ink); font-weight: 600; }
+
+    .lsa-nc-grid {
+      display: grid; grid-template-columns: 10fr 11fr;
+      gap: clamp(20px, 3vw, 36px); align-items: start;
+    }
+    .lsa-nc-panel { border-radius: var(--nc-radius); padding: clamp(20px, 2.6vw, 30px); display: grid; gap: 20px; }
+    .lsa-nc-panel--google { border: 1.5px dashed var(--nc-line); }
+    .lsa-nc-panel--cmd {
+      background: var(--nc-card); border: 1px solid var(--nc-line);
+      border-top: 4px solid var(--nc-acc); box-shadow: var(--nc-shadow);
+    }
+    @media (min-width: 861px) { .lsa-nc-panel--cmd { transform: translateY(-10px); } }
+
+    .lsa-nc-panelhead { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; }
+    .lsa-nc-label {
+      font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+      font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;
+      color: var(--nc-mut);
+    }
+    .lsa-nc-panel--cmd .lsa-nc-label { color: var(--nc-ink); }
+    .lsa-nc-chip {
+      font-size: 12.5px; font-weight: 600; padding: 5px 12px; border-radius: 999px; white-space: nowrap;
+    }
+    .lsa-nc-chip--x { color: var(--nc-x); border: 1px solid currentColor; opacity: 0.85; }
+    .lsa-nc-chip--v { color: #fff; background: var(--nc-acc); }
+
+    .lsa-nc-shots { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .lsa-nc-shots figure { display: grid; gap: 10px; }
+    .lsa-nc-shots img {
+      width: 100%; height: auto; display: block; border-radius: 14px;
+      border: 1px solid var(--nc-line);
+    }
+    .lsa-nc-panel--google .lsa-nc-shots img { filter: saturate(0.8); opacity: 0.9; }
+    .lsa-nc-shots figcaption { font-size: 13px; color: var(--nc-mut); line-height: 1.4; }
+
+    .lsa-nc-list { list-style: none; display: grid; gap: 10px; font-size: 15.5px; }
+    .lsa-nc-list li { display: flex; gap: 10px; align-items: baseline; }
+    .lsa-nc-list li::before {
+      font-weight: 800; flex: 0 0 auto; font-size: 14px; line-height: 1;
+      transform: translateY(-1px);
+    }
+    .lsa-nc-list--x li::before { content: "✕"; color: var(--nc-x); }
+    .lsa-nc-list--v li::before { content: "✓"; color: var(--nc-acc); }
+    .lsa-nc-list--x li { color: var(--nc-mut); }
+    .lsa-nc-list--v li strong { font-weight: 600; }
+
+    .lsa-nc-proof {
+      display: flex; flex-wrap: wrap; gap: 22px; align-items: center; justify-content: space-between;
+      background: var(--nc-card); border: 1px solid var(--nc-line); border-radius: var(--nc-radius);
+      padding: clamp(22px, 3vw, 30px) clamp(22px, 3.4vw, 36px);
+    }
+    .lsa-nc-proof p { font-size: clamp(15.5px, 1.5vw, 17.5px); max-width: 58ch; color: var(--nc-mut); }
+    .lsa-nc-proof p strong { color: var(--nc-ink); font-weight: 600; }
+    .lsa-nc-cta {
+      display: inline-block; background: var(--nc-acc); color: #fff; text-decoration: none;
+      font-weight: 600; font-size: 16px; padding: 14px 28px; border-radius: 12px;
+      transition: transform 0.15s ease, background 0.15s ease; white-space: nowrap;
+    }
+    .lsa-nc-cta:hover { background: var(--nc-acc-deep); transform: translateY(-1px); }
+    .lsa-nc-cta:focus-visible { outline: 3px solid var(--nc-acc); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) {
+      .lsa-nc-cta { transition: none; }
+      .lsa-nc-cta:hover { transform: none; }
+    }
+
+    .lsa-nc-fine { font-size: 12.5px; color: var(--nc-mut); opacity: 0.85; max-width: 78ch; }
+
+    @media (max-width: 860px) {
+      .lsa-nc-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <div class="lsa-nc-wrap">
+    <header class="lsa-nc-head">
+      <p class="lsa-nc-eyebrow">Every call · Every message · Every lead</p>
+      <h2>Google tells you a lead called. <em>We tell you everything.</em></h2>
+      <p class="lsa-nc-sub">
+        The moment a Local Services Ads lead calls or messages, LSA Command emails
+        <strong>and</strong> texts you the caller's phone number and extension, their name,
+        and the full conversation — so you can call back while the job is still up for grabs.
+        Google's built-in notification? <strong>"A potential customer called you."</strong> That's it.
+      </p>
+    </header>
+
+    <div class="lsa-nc-grid">
+      <article class="lsa-nc-panel lsa-nc-panel--google">
+        <header class="lsa-nc-panelhead">
+          <p class="lsa-nc-label">Google's default alert</p>
+          <p class="lsa-nc-chip lsa-nc-chip--x">Log in to find out</p>
+        </header>
+        <div class="lsa-nc-shots">
+          <figure>
+            <img src="assets/google-lsa-alert.png" width="760" height="928" loading="lazy"
+                 alt="Google's entire Local Services Ads notification email: 'A potential customer called you' with a View Details button and no lead information">
+            <figcaption>The entire email: "A potential customer called you." No name, no number — just a button to go log in and dig.</figcaption>
+          </figure>
+        </div>
+        <ul class="lsa-nc-list lsa-nc-list--x">
+          <li>No caller name, no phone number</li>
+          <li>No idea what the customer actually needs</li>
+          <li>Another login between you and the job</li>
+        </ul>
+      </article>
+
+      <article class="lsa-nc-panel lsa-nc-panel--cmd">
+        <header class="lsa-nc-panelhead">
+          <p class="lsa-nc-label">The LSA Command alert</p>
+          <p class="lsa-nc-chip lsa-nc-chip--v">Everything, instantly</p>
+        </header>
+        <div class="lsa-nc-shots">
+          <figure>
+            <img src="assets/lsacommand-alert.png" width="760" height="1295" loading="lazy"
+                 alt="The complete LSA Command alert email: conversation takeover link, lead type, location, the caller's phone number, and the full AI conversation transcript">
+            <figcaption>The lead's number and details — plus the full AI conversation, word for word.</figcaption>
+          </figure>
+        </div>
+        <ul class="lsa-nc-list lsa-nc-list--v">
+          <li><strong>Phone number + extension</strong> at your fingertips</li>
+          <li><strong>Lead's name and location</strong></li>
+          <li><strong>Full AI conversation transcript</strong></li>
+          <li><strong>One-click takeover link</strong> to jump into the conversation</li>
+          <li><strong>Email and text</strong>, the second the lead comes in</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="lsa-nc-proof">
+      <p>
+        <strong>Speed to lead wins jobs.</strong> When the number is already in your hand, you're
+        calling back in seconds — not after you find a laptop, log in, and dig. That's how our
+        clients convert more of the leads they're already paying Google for.
+      </p>
+      <a class="lsa-nc-cta" href="#book-a-demo">Book a demo</a>
+    </div>
+
+    <p class="lsa-nc-fine">
+      Real notifications from July 2026, shown side by side — lead details partially blurred for
+      privacy. LSA Command alerts are white-labeled: the alert above carries one of our partner
+      agencies' branding, and yours would carry yours.
+    </p>
+  </div>
+</section>
