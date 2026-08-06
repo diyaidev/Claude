@@ -57,7 +57,7 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | # | Item | Owner | Status |
 |---|---|---|---|
 | 1 | Mark up recruiting copy + intake form (payout language, Dalton's rules, red-flag gaps) | Daniel | folded into the agreement negotiation |
-| 2 | Sub-affiliate agreement | **Ryan** | **final version received Jul 29 pm — awaiting Ryan's signature.** Negotiated across two redrafts: entity + Section 5 cure-window edits in, 90/10 split item resolved better than asked, categories open after one completed pay cycle |
+| 2 | Sub-affiliate agreement | **Ryan** | **UNSIGNED 8 days as of Aug 6.** Final version received Jul 29 pm with both edits in (entity + Section 5 cure window; 90/10 resolved better than asked; categories open after one completed pay cycle). Daniel nudged "Are we good to go?" Jul 30 — no visible reply since |
 | 3 | Reconcile payout copy vs agreed ranges (see ⚠️ above) | Ryan | open |
 | 4 | Ask Dalton in WhatsApp: pool-contractor buyers in Zion? | Ryan | open |
 | 5 | Get launch zips / buyer-matrix coverage for target categories | Ryan (via Dalton) | open |
@@ -71,6 +71,12 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 |---|---|---|---|---|---|---|---|
 | 2026-07-23 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-07-30 | 0 | 0 | 0 | 0 | 0 | — | $0 |
+| 2026-08-06 | 0 | 0 | 0 | 0 | 0 | — | $0 |
+
+*Week of Aug 6 context: agreement unsigned 8 days, Daniel's Jul 30 nudge unanswered; one live
+pay-per-call conversation held Aug 4 with Direct Phone Calls (directphonecalls@gmail.com +
+anemeshsharma9@gmail.com — role unconfirmed: seller, network, or vendor); "Call Nate" partner
+touch Aug 5; four seller 1:1s still unanswered, no new outreach; Skool post not live.*
 
 *Week of Jul 30 context: agreement unsigned (final draft arrived Jul 29 evening); four warm
 1:1 seller conversations open, none replied; Skool post not yet live; Ryan reported himself
