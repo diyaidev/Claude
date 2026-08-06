@@ -73,6 +73,14 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | 2026-07-30 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-06 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 
+*Ops decisions (Aug 6): Apify canceled (idle since the July Explorium switch; access ends
+Aug 19, saved actors kept on free shell). Explorium decision OPEN: ~$780/mo across AgentSource
+Growth ($600, renewed ~Aug 5) + Vibe Prospecting Ultra ($180, renewed ~Aug 2) currently feeds
+the outbound machine aimed at benched Agent Operations verticals; no visible Accelerate
+funding reply to the Jul 8 cost memo. Recommendation on file: repoint the machine at
+pay-per-call seller/agency recruiting and downsize to one right-sized subscription, or cancel
+both before the early-September renewal.*
+
 *Week of Aug 6 context: agreement unsigned 8 days, Daniel's Jul 30 nudge unanswered; one live
 pay-per-call conversation held Aug 4 with Direct Phone Calls (directphonecalls@gmail.com +
 anemeshsharma9@gmail.com — role unconfirmed: seller, network, or vendor); "Call Nate" partner
