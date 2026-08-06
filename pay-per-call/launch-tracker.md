@@ -61,7 +61,7 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | 3 | Reconcile payout copy vs agreed ranges (see ⚠️ above) | Ryan | open |
 | 4 | Ask Dalton in WhatsApp: pool-contractor buyers in Zion? | Ryan | open |
 | 5 | Get launch zips / buyer-matrix coverage for target categories | Ryan (via Dalton) | open |
-| 6 | First recruiting channel live — Skool post is fastest (own audience) | Ryan | blocked on 1–3 |
+| 6 | First recruiting channel live — Skool post | Ryan | **LIVE ✅ since ~last week of July (per Ryan 2026-08-06** — Skool is outside Claude's visibility; earlier "not live" was the same visibility gap as the agreement). Seller-lead sourcing now tracked in `pay-per-call/seller-leads.md` |
 | 7 | First-20 seller co-reviews + Dalton interviews | Ryan + Daniel | not started |
 | 8 | 1:1 seller outreach (warm, hand-picked rank-and-rent operators) | Ryan | 4 sent Jul 24–26 — Ippei (100+ calls/day, 150+ sites), Jesse/RankExpand (+follow-up Jul 28), Jacky/Indexsy, Nick/DigitalLandlords — 0 replies yet |
 
