@@ -57,7 +57,7 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | # | Item | Owner | Status |
 |---|---|---|---|
 | 1 | Mark up recruiting copy + intake form (payout language, Dalton's rules, red-flag gaps) | Daniel | folded into the agreement negotiation |
-| 2 | Sub-affiliate agreement | **Ryan** | **UNSIGNED 8 days as of Aug 6.** Final version received Jul 29 pm with both edits in (entity + Section 5 cure window; 90/10 resolved better than asked; categories open after one completed pay cycle). Daniel nudged "Are we good to go?" Jul 30 — no visible reply since |
+| 2 | Sub-affiliate agreement | Ryan | **SIGNED ✅ (confirmed by Ryan 2026-08-06).** Both edits in (entity + Section 5 cure window; 90/10 resolved better than asked; categories open after one completed pay cycle). Signing completed outside the connected mailbox — earlier "unsigned" status was a visibility error, now corrected |
 | 3 | Reconcile payout copy vs agreed ranges (see ⚠️ above) | Ryan | open |
 | 4 | Ask Dalton in WhatsApp: pool-contractor buyers in Zion? | Ryan | open |
 | 5 | Get launch zips / buyer-matrix coverage for target categories | Ryan (via Dalton) | open |

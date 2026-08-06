@@ -171,4 +171,14 @@ the same pond from opposite ends.
 negotiated hard and won both edits. What is actually stopping the signature — name the specific
 blocker out loud — and if there isn't one, does the signed copy go back to Daniel today?
 
-**A:** _(pending)_
+**A (2026-08-06, in session):** Q4's premise was wrong — **Ryan already signed the agreement
+with Daniel; it's done.** The signing happened outside the visible mailbox (no reply in the
+email thread and no e-signature receipt in ryan@diyai.ai — so it completed via WhatsApp, a
+signing link receipted to another inbox, text, or voice). Correction logged; with the paper
+done, the launch gate is open: Skool post, seller follow-ups, and the Dalton pool-contractor
+question are all unblocked.
+
+**⚠️ Method correction (standing):** Claude's visibility is the ryan@diyai.ai mailbox and
+calendar only — WhatsApp, texts, calls, and other inboxes are invisible. Absence of evidence
+in that window is NOT deal-state. Weekly check-ins state what is visible and ask, rather than
+asserting "not done" from silence.
