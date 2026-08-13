@@ -62,3 +62,4 @@ Play: "forward the calls you can't sell — get paid per qualified call, weekly.
 | Week of | New targets named | Contacted (cum.) | Replies | Applications |
 |---|---|---|---|---|
 | 2026-08-06 | 25+ across 4 segments | 5 (Jul 1:1s) | 0 | not visible (see unblock 3) |
+| 2026-08-13 | 266-owner Explorium list built (unexported) | 6 (+Jason/64 Leads Aug 7; payout correction sent to all four cold sellers) | 0 | not visible |

@@ -58,7 +58,7 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 |---|---|---|---|
 | 1 | Mark up recruiting copy + intake form (payout language, Dalton's rules, red-flag gaps) | Daniel | folded into the agreement negotiation |
 | 2 | Sub-affiliate agreement | Ryan | **SIGNED ✅ (confirmed by Ryan 2026-08-06).** Both edits in (entity + Section 5 cure window; 90/10 resolved better than asked; categories open after one completed pay cycle). Signing completed outside the connected mailbox — earlier "unsigned" status was a visibility error, now corrected |
-| 3 | Reconcile payout copy vs agreed ranges (see ⚠️ above) | Ryan | open |
+| 3 | Reconcile payout copy vs agreed ranges (see ⚠️ above) | Ryan | **RESOLVED ✅ Aug 7** — correction sent to all four contacted sellers: payment timing/amounts per publisher agreement, no generalized promises |
 | 4 | Ask Dalton in WhatsApp: pool-contractor buyers in Zion? | Ryan | open |
 | 5 | Get launch zips / buyer-matrix coverage for target categories | Ryan (via Dalton) | open |
 | 6 | First recruiting channel live — Skool post | Ryan | **LIVE ✅ since ~last week of July (per Ryan 2026-08-06** — Skool is outside Claude's visibility; earlier "not live" was the same visibility gap as the agreement). Seller-lead sourcing now tracked in `pay-per-call/seller-leads.md` |
@@ -72,6 +72,12 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | 2026-07-23 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-07-30 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-06 | 0 | 0 | 0 | 0 | 0 | — | $0 |
+| 2026-08-13 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
+
+*Week of Aug 13 context: payout-language correction sent to all four sellers (Aug 7); Jason
+(64 Leads) added as warm seller ask #6; zero visible seller replies; the 266-owner Explorium
+list remains unexported pending Ryan's confirm; Explorium ~$780/mo renewal decision still due
+before early September; sellyourcalls application counts still not visible to Claude.*
 
 *Ops decisions (Aug 6): Apify canceled (idle since the July Explorium switch; access ends
 Aug 19, saved actors kept on free shell). Explorium decision OPEN: ~$780/mo across AgentSource

@@ -23,7 +23,9 @@ and calendar data. "Meetings" means walkthroughs actually booked on the calendar
 | Chicago appliance repair | Aug 3 | 4 | 0 | 0 |
 | Nashville fencing | Aug 4 | 4 | 0 | 0 |
 | Minneapolis chimney | Aug 5 | 4 | 0 | 0 |
-| **Total** | | **~83** | **1 (an opt-out)** | **0** |
+| Seattle painting | Aug 6 | 4 | 0 | 0 |
+| Columbus windows / siding | Aug 7 | 4 | 0 | 0 |
+| **Total** | | **~91** | **1 (an opt-out)** | **0** |
 
 **Standing read (2026-08-06):** four more one-day verticals again this week (pools, appliance
 repair, fencing, chimney) — the copy keeps getting sharper (site-contradiction angles like

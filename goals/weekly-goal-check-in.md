@@ -182,3 +182,25 @@ question are all unblocked.
 calendar only — WhatsApp, texts, calls, and other inboxes are invisible. Absence of evidence
 in that window is NOT deal-state. Weekly check-ins state what is visible and ask, rather than
 asserting "not done" from silence.
+
+### Week 5 — 2026-08-13
+
+**Week in review:** best integrity move of the run — on Aug 7 Ryan sent payout-language
+corrections to all four cold sellers (Ippei, Jesse, Jacky, Nick): "I wrote 'weekly payouts'
+and I shouldn't have generalized that; payment timing is defined in the publisher agreement."
+That resolves the tracker's payout-overpromise flag the right way. Seller pipeline grew by
+one warm ask: Jason at 64 Leads ("quick question about 64 Leads' non-LSA calls"). Still zero
+visible seller replies; the 266-owner Explorium seller list built Aug 6 sits unexported
+(awaiting Ryan's one-word confirm); no Dalton/Daniel meetings on calendar. Elsewhere: Brett
+Williamson (AdGenius) onboarding landed Monday — a new client win; masterminds now include
+Chris Monkaitis and Jason; a loan-qualification package went to Christian Penner (mortgage).
+The background sequence added Seattle painting and Columbus windows/siding (~91 prospects
+lifetime, still one opt-out reply, zero meetings).
+
+**Q5:** Your seller recruiting is running at roughly two hand-crafted contacts a week — six
+total in three weeks — while a 266-owner seller list sits built and unexported; at this pace
+the first-20 cohort is ten weeks out. How many seller contacts will go out in the next seven
+days, and do I deploy the 266-lead list (export with emails, hand it to your sequence) to hit
+that number?
+
+**A:** _(pending)_
