@@ -73,6 +73,13 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | 2026-07-30 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-06 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-13 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
+| 2026-08-20 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
+
+*Week of Aug 20 context: full stall — no seller outreach, Daniel/Dalton traffic, or seller
+meetings visible since the Aug 7 payout corrections (Ryan out of town part of the week). The
+266-lead list remains unexported. Clock: Explorium ~$780/mo renews ~Sep 2–5; 27,600 credits
+expire Sep 29. LSACommand meanwhile compounding (Search Prestige onboarded, Nate tracker,
+Paul Benton intro) — Week 6 question puts the focus decision to Ryan.*
 
 *Week of Aug 13 context: payout-language correction sent to all four sellers (Aug 7); Jason
 (64 Leads) added as warm seller ask #6; zero visible seller replies; the 266-owner Explorium

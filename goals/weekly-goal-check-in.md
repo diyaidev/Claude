@@ -203,4 +203,28 @@ the first-20 cohort is ten weeks out. How many seller contacts will go out in th
 days, and do I deploy the 266-lead list (export with emails, hand it to your sequence) to hit
 that number?
 
+**A:** _(not answered in session — observed from the week's data: zero seller contacts went
+out Aug 13–20, and the 266-lead list remains unexported.)_
+
+### Week 6 — 2026-08-20
+
+**Week in review:** the pay-per-call lane went fully quiet — no seller outreach, no visible
+Daniel or Dalton traffic, no seller meetings booked; it has now been ~2 weeks since the last
+seller touch (the Aug 7 payout corrections). The automated Agent Operations sequence also
+appears stopped: no cold sends visible since Aug 7. Fairness note: Ryan was out of town at
+least part of the week ("while I'm out of town," Aug 17). Meanwhile LSACommand compounded on
+its own momentum: Search Prestige (Victor/Andrew, via an Austin referral) onboarded their
+first client and asked for a demo (Ryan delegated to Alex), the shared prospect follow-up
+tracker went to Nate, a Paul Benton intro call is booked for Friday via Nate, and masterminds
+ran Monday/Wednesday/Friday. Personal ops: 2025 taxes filed (refund to Wells Fargo), mortgage
+loan package moving with Christian/Andrea. Clock check: Explorium's ~$780/mo renews around
+Sep 2–5, its 27,600 credits expire Sep 29, and the 266-owner seller list is still unexported.
+
+**Q6:** In the two-plus weeks since you signed with Daniel, zero seller contacts have gone
+out — while LSACommand added Search Prestige, Brett, and a Paul Benton intro without being
+called the focus; your calendar is voting, and it isn't voting for pay-per-call. Before the
+~$780 Explorium renewal hits in early September: is pay-per-call still the primary focus you
+want these check-ins driving toward, or do we re-aim the goal at LSACommand and run
+pay-per-call as a Daniel-paced side bet?
+
 **A:** _(pending)_

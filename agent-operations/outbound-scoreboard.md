@@ -27,13 +27,9 @@ and calendar data. "Meetings" means walkthroughs actually booked on the calendar
 | Columbus windows / siding | Aug 7 | 4 | 0 | 0 |
 | **Total** | | **~91** | **1 (an opt-out)** | **0** |
 
-**Standing read (2026-08-06):** four more one-day verticals again this week (pools, appliance
-repair, fencing, chimney) — the copy keeps getting sharper (site-contradiction angles like
-"Call us anytime!" vs "Sat & Sun closed"), but the arithmetic hasn't changed: ~83 prospects,
-1 reply ever (an opt-out), 0 meetings, across 13 verticals in 30 days. Nothing has earned a
-second batch. Note the crossover: the sequence is now cold-pitching pool companies as Agent
-Operations customers while pool contractors are the candidate BUYER network for the
-pay-per-call launch — the same pond fished from opposite ends, uncoordinated. Options
-unchanged: commit to ONE vertical at real volume, deliberately idle it, or point it at
-pay-per-call seller recruiting instead. Ryan decides; the sequence runs outside Claude's
-control.
+**Standing read (2026-08-20):** the sequence appears to have STOPPED — no cold sends visible
+since Aug 7 (Columbus windows/siding was the last new vertical; final bumps went out Aug 5–7).
+Whether that's deliberate idling or a broken automation, it resolves the "commit or idle"
+question by default unless Ryan restarts it. Lifetime: ~91 prospects, 13 verticals, 1 reply
+(an opt-out), 0 meetings. If it stays idle, the remaining cost question is the Explorium data
+stack (~$780/mo, renewing ~Sep 2–5) that was feeding it.
