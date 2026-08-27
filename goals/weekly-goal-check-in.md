@@ -227,4 +227,27 @@ called the focus; your calendar is voting, and it isn't voting for pay-per-call.
 want these check-ins driving toward, or do we re-aim the goal at LSACommand and run
 pay-per-call as a Daniel-paced side bet?
 
+**A:** _(not answered in session — and the week that followed was a third consecutive silent
+week on pay-per-call, which increasingly answers it in practice.)_
+
+### Week 7 — 2026-08-27
+
+**Week in review:** only two mail threads all week, both LSACommand. The big one: **first
+client churn** — Search Prestige's debut client (Tanler Termite) canceled ("I don't think
+they could afford marketing at all"), preceded by a product-trust complaint (the AI scheduled
+a lead appointment without the client's knowledge). Ryan's handling was strong: defended the
+capability, reframed scheduling as an advanced configuration, kept the partner ("we will
+replace it with another account soon") and booked a save/review meeting for Friday Aug 28.
+Alex shipped product fixes through the week (business hours, phone conflicts). Calendar:
+masterminds near-daily, the Paul Benton intro call happened Aug 21, Heavy Lifting follow-up
+Aug 28; some events set in Costa Rica timezone (Ryan likely traveling). Pay-per-call: zero
+seller, Daniel, or Dalton activity — third straight silent week since the Aug 7 payout
+corrections; the 266-lead list remains unexported. Clock: Explorium (~$780/mo) renews ~Sep
+2–5 — silence renews it by default; credits expire Sep 29.
+
+**Q7:** The Explorium data stack (~$780/month across two subscriptions) renews within days,
+and nothing has used it since August 7 — doing nothing IS the decision to pay for it again.
+Cancel both, downsize to one right-sized seat, or keep as-is: which do you pick — and if
+anything survives, what specifically does it feed in September?
+
 **A:** _(pending)_

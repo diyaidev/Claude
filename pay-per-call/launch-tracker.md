@@ -74,6 +74,11 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | 2026-08-06 | 0 | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-13 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-20 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
+| 2026-08-27 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
+
+*Week of Aug 27: third consecutive silent week — no seller, Daniel, or Dalton activity since
+Aug 7. Week 6's focus question (pay-per-call vs LSACommand) went unanswered; Week 7's question
+narrows to the Explorium renewal (~Sep 2–5, ~$780/mo) as the forcing function.*
 
 *Week of Aug 20 context: full stall — no seller outreach, Daniel/Dalton traffic, or seller
 meetings visible since the Aug 7 payout corrections (Ryan out of town part of the week). The
