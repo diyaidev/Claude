@@ -75,6 +75,14 @@ Qualified call = new caller, correct category, in service area, 60+ seconds.
 | 2026-08-13 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-20 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
 | 2026-08-27 | 0 visible | 0 | 0 | 0 | 0 | — | $0 |
+| 2026-09-27 | 0 | 0 | 0 | 0 | 0 | — | $0 |
+
+**STATUS (2026-09-27): DORMANT.** Zero mentions in any September meeting, zero seller
+activity since Aug 7, seven weeks without a touch. The signed Daniel agreement remains a
+retained option. Goal focus moved to LSA Command white-label partners (goal v1.3). Loose
+ends: Explorium subscription status unknown (Gmail auth lapsed — if both subs survived
+September, that's ~$1,560 more spent unused); the 27,600 credits expire Sep 29; the 266-owner
+seller list was never exported and its session tables have likely expired.
 
 *Week of Aug 27: third consecutive silent week — no seller, Daniel, or Dalton activity since
 Aug 7. Week 6's focus question (pay-per-call vs LSACommand) went unanswered; Week 7's question

@@ -13,12 +13,16 @@ that can stand on its own next to (and eventually beyond) the Accelerate Marketi
 More concretely: convert the large audience-building effort Ryan already runs every week into
 paying customers of a focused offer.
 
-**Current focus (v1.2, updated 2026-07-23):** primary focus is now the **Pay-Per-Call lead
-brokering opportunity with Daniel Foster** (sellyourcalls.vercel.app — recruiting and vetting
-call sellers, brokering calls to buyers like pool contractors; sub-affiliate agreement and
-first-20 seller review in motion). Agent Operations outbound keeps running in the background
-via Ryan's automated sequence (see Week 2 evaluation); LSACommand keeps converting on its own
-momentum; DIY AI remains the conversational-AI component inside LSACommand.
+**Current focus (v1.3, updated 2026-09-27 — inferred from Ryan's own September meetings,
+pending his confirmation):** **LSA Command white-label partner growth.** Ryan's own target,
+declared in the Sep 9 mastermind: **10 solid white-label partners → $20K/month**, with seven
+in progress at the time. Pricing positioning: agencies moving from ~$750/mo toward $2–3K/mo
+with LSA. September partner wins: Case Engine (Sep 3, first client Mayfarm), The Light
+Digital / Paul Benton ($200/mo, Sep 8–14, bringing a ~$7K/mo LSA client), R&R Storage in
+setup (Sep 23). The Pay-Per-Call venture (v1.2 focus) went fully dormant — zero mentions in
+any September meeting, no seller activity since Aug 7; the signed Daniel agreement is
+retained as an option, not a focus. This revision is evidence-based, not Ryan-stated — he
+should confirm or correct it.
 
 ### Evidence (from calendar, email, and business tools — July 2026)
 
@@ -249,5 +253,35 @@ corrections; the 266-lead list remains unexported. Clock: Explorium (~$780/mo) r
 and nothing has used it since August 7 — doing nothing IS the decision to pay for it again.
 Cancel both, downsize to one right-sized seat, or keep as-is: which do you pick — and if
 anything survives, what specifically does it feed in September?
+
+**A:** _(not answered in session. September's meetings answered the focus half in practice —
+see Week 11. Explorium's fate is unknown: Gmail's authorization lapsed, so receipts are
+invisible; its 27,600 credits expire Sep 29 regardless.)_
+
+### Weeks 8–10 — 2026-09-03 / 09-10 / 09-17 / 09-24 — MISSED (system failure)
+
+The weekly Routine's scheduled fires were lost in a platform delivery backlog; the Sep 10 run
+arrived Sep 27. No check-ins ran, no questions were asked. The gap is the system's fault, not
+Ryan's. Routine verified healthy; next fire Oct 1.
+
+### Week 11 — 2026-09-27 (catch-up)
+
+**Month in review (from calendar + Granola; Gmail auth expired mid-month — reconnect needed):**
+September was an LSA Command month, end to end. Ryan declared his own growth model in the
+Sep 9 mastermind: **10 solid white-label partners → $20K/month, seven in progress.** Partner
+motion: Case Engine onboarded Sep 3 (first client: Mayfarm, PI attorneys); The Light Digital
+(Paul Benton + Adams) became a $200/mo white-label account Sep 8–14, bringing a ~$7K/mo LSA
+home-services client; R&R Storage in setup Sep 23 ($200/mo). The mastermind relaunched as a
+Mon/Wed/Fri customer workshop (new regulars attending). Product/positioning: pitching
+preservation of 6 months of LSA history ahead of the late-September PMax migration — a real
+urgency hook. Losses and stalls: Search Prestige was NOT saved (unresponsive as of Sep 18);
+Pay-Per-Call appeared in zero September meetings — fully dormant, 7 weeks without a seller
+touch; Explorium status unknown (Gmail blind), credits die Sep 29; the goal focus is revised
+to v1.3 accordingly, pending Ryan's confirmation.
+
+**Q8:** Your own Sep 9 model is 10 white-label partners at $20K/month, and you said seven
+were in progress — but "in progress" doesn't pay. As of today: how many of the seven are
+actually paying monthly accounts, and which ONE partner do you convert or upgrade this week
+to move that number?
 
 **A:** _(pending)_
