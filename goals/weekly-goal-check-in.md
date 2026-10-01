@@ -284,4 +284,26 @@ were in progress — but "in progress" doesn't pay. As of today: how many of the
 actually paying monthly accounts, and which ONE partner do you convert or upgrade this week
 to move that number?
 
+**A:** _(pending — Gmail reconnect also still pending, which keeps these check-ins half-blind)_
+
+### Week 12 — 2026-10-01
+
+**Week in review (calendar + Granola; Gmail still locked):** steady operating rhythm —
+Mon/Wed/Fri LSA Command workshops running with regulars. Concrete decisions from the Sep 30
+meetings: price clarified at **$200/month (not $299)**; Paul's three-location client starts
+with ONE location, Ryan checking call volume before agreeing structure; a three-week free
+trial offered. Esteban to send the Seven Figure Agency Provider Program document — Ryan
+weighing a five-month test at $1,500/month (~$7,500), not yet committed. Vincent and Brian
+(Heavy Lifting) confirmed as already-paying. Staffing: Mark's last day Sep 30, interim SEO
+manager named, a new developer hired. Ryan's own stated next steps: follow up with Paul and
+**restart daily agency outreach**. The arithmetic to watch: at $200/month flat, ten partners
+is $2K/month, not $20K — the Sep 9 model only closes if pricing is per location and partners
+each scale to ~10 paying locations, which makes locations (not partner count) the real
+scoreboard number.
+
+**Q9:** You held LSA Command at $200/month with a free trial this week, which means the
+10-partner/$20K model only works at roughly ten paying locations per partner. How many paying
+locations are live across all partners today — and since you told the team you're restarting
+daily agency outreach, what is the daily number, starting when?
+
 **A:** _(pending)_
