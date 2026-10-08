@@ -307,3 +307,25 @@ locations are live across all partners today — and since you told the team you
 daily agency outreach, what is the daily number, starting when?
 
 **A:** _(pending)_
+
+### Week 13 — 2026-10-08
+
+**Week in review (Gmail restored — now scoped to the gmail/Accelerate account, so diyai.ai
+outbound is not visible from here; calendar full view):** real partner-pipeline motion — a
+four-person team from Tree Service Digital (agency, via Nate) is booked for a Friday Oct 9
+demo, and a "Regroup: PipeWrench and LSA Command" with Paul + Adams (The Light Digital) is
+set for Tuesday Oct 13 — likely Paul's ~$7K/mo home-services client coming onto the platform.
+LSA Command got its own branded mailbox (ryan@lsacommand.com delivery tests Oct 7).
+Money-cleanup week: Wells Fargo dispute on $1,410.75 of Google LSA charges (provisional
+credits posted), a mystery $629 Salesloft charge nobody can place (the Apify lesson in the
+wild — unused subscriptions bill quietly), Lifeforce canceled before its Oct 9 renewal, an
+Amazon Prime overlap refund chased. Fort Pierce storage handoff: Greg at White Label Storage
+has now asked FOUR times across 16 days for one SiteLink occupancy report (blocked on partner
+Alex) — a $2,650/mo management decision stalled on a single document. Masterminds continue
+Mon/Wed/Fri.
+
+**Q10:** Friday a four-person agency sits in your demo, and Tuesday Paul regroups on
+PipeWrench — two live at-bats in five days. For each call: what specific yes are you asking
+for before it ends, and at what monthly price?
+
+**A:** _(pending)_
