@@ -328,4 +328,28 @@ Mon/Wed/Fri.
 PipeWrench — two live at-bats in five days. For each call: what specific yes are you asking
 for before it ends, and at what monthly price?
 
+**A:** _(not answered directly — but the Oct 9 demo notes show he walked in with the price:
+$200/location/month, no contract, pilot-client next steps. The close is still open.)_
+
+### Week 14 — 2026-10-15
+
+**Week in review (Granola + calendar):** the pipeline is maturing into real numbers. Tree
+Service Digital (Oct 9 demo): $200/location/month presented, no-charge white-label account
+being set up, Wes picking pilot clients and asking "what's next?" before the follow-up — the
+full five-person TSD team is back on a call TODAY 2pm ET, right after a fresh Ad Genius
+meeting (Brett) at 12:30pm. Case Engine: ~5 accounts rolling out (PI + one immigration), May
+Firm live, go-live pending budget approvals Fri Oct 16 / Mon Oct 19, with the 10-second-ring
+→ AI fallback config set. Nathaniel bringing 4–5 clients ≈ $1,000/month immediate. Structural
+decisions in motion: the old equity/partnership arrangement is winding down in favor of a
+referral/sales-partner model with residual commission — **rate unresolved: 20% proposed, 25%
+countered** — while the affiliate program (auto referral links, "consistent payout structure")
+was targeted to launch today, Oct 15. Fort Pierce: full handover-coordination call tomorrow
+with a proper agenda (RMS out Nov 30, White Label in Dec 1, agreement still unsigned). The
+agency target restated in the week's notes: 10 clients × $200 = $2,000/month per agency.
+
+**Q11:** The affiliate program was targeted to launch today, but the residual rate is still
+stuck between your 20% and their counter of 25%. What's the number, effective today — and
+does that one rate apply uniformly to Nate and every future referral partner so the launch
+isn't blocked on case-by-case deals?
+
 **A:** _(pending)_
