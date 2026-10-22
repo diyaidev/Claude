@@ -352,4 +352,28 @@ stuck between your 20% and their counter of 25%. What's the number, effective to
 does that one rate apply uniformly to Nate and every future referral partner so the launch
 isn't blocked on case-by-case deals?
 
+**A (answered in action, per Oct 15–19 meeting notes):** rate set at **15% ongoing, no
+expiration** — neither anchor, lower but permanent; referral link live in the dashboard
+("Refer and Earn") Oct 13–14, affiliate signup page live Oct 19, affiliate.lsacmd.com
+subdomain pending.
+
+### Week 15 — 2026-10-22
+
+**Week in review (Granola; calendar steady):** a signed partner and a shipped program — The
+Light Digital's **reseller agreement signed by Oct 19** (target: 10–15 business clients,
+$1–3K/month eventually), the affiliate program launched with the 15% forever rate, and Vincent
+(Heavy Lifting) reached **5 clients on LSA Command** as of Oct 21. Tree Service Digital began
+real onboarding: first location is Texas Tree Authority — CID linked, white-label subdomain
+and AI number configured — but voice routing awaits Christian's sign-off and **the billing
+link sat received-but-unpaid as of Oct 16 while setup work continued**. Ad Genius (Brett)
+requested a demo account; a shared universal demo account is being built. Case Engine's
+Oct 16/19 go-live is unconfirmed in the notes. The pattern worth naming: the machine builds
+faster than it collects — configuration proceeds ahead of payment, the same sequencing that
+stalled the Daniel agreement and the seller-list export.
+
+**Q12:** Texas Tree Authority is configured but was unpaid as of Oct 16, and Light Digital
+just signed for an eventual 10–15 clients. Two-parter with one theme — cash: how many dollars
+have actually hit the bank from LSA Command partners so far in October, and do you adopt the
+rule "no account goes live until its payment method is on file," starting today?
+
 **A:** _(pending)_
