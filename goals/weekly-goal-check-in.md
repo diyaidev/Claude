@@ -377,3 +377,32 @@ have actually hit the bank from LSA Command partners so far in October, and do y
 rule "no account goes live until its payment method is on file," starting today?
 
 **A:** _(pending)_
+
+### Week 16 — 2026-10-29
+
+**Week in review (Gmail + calendar + Granola):** movement everywhere except the cash column.
+Fort Pierce went from stalled to kicked off in 72 hours — transition intake submitted Oct 20,
+White Label Storage's $2,500 setup invoice (INV-4915, first installment) paid the **same day**
+it was sent, onboarding kickoff held Oct 23, SiteLink transfer still aimed at Nov 30 for the
+Dec 1 handover (WLS's own lead-time gates land Nov 17 and Nov 24). Note the asymmetry: when
+Ryan is the customer, money moves in hours; when partners' clients are the account,
+configuration still runs ahead of payment. LSA Command: Tree Service Digital's full team met
+Oct 28 on pilot setup — Christian's pilot goes live after a forwarding-number swap and ONE
+successful test call, follow-up cadence locked at five-minute intervals, SMS missed-call
+alerts turned on, and Alex is chasing an $832 credits/refunds anomaly; Texas Tree Authority's
+payment status didn't surface in any note this week. The Light Digital regroup on PipeWrench
+(Paul's ~$7K/mo home-services client) is booked for Nov 3 — the second regroup in three
+weeks. Case Engine's go-live, "pending budget approval" since Oct 16, remains unconfirmed.
+Vincent (Heavy Lifting, 5 clients) got a setup session with Alex Oct 22. Accelerate side:
+Santiago out and accounts moved to Anna, a third account manager being hired, Rafa Roa
+(Compliance USA) signed as a referral partner and already sent a client, and an $11,624
+FreshBooks transfer pending that may not land until November. Q12 (October cash +
+payment-on-file rule) is still unanswered — and October closes Friday.
+
+**Q13:** Three LSA Command accounts are parked at the go-live gate: Christian's TSD pilot
+(one test call away), Case Engine's five accounts ("pending approval" since Oct 16), and
+PipeWrench (second regroup, Nov 3). Which ONE do you personally push live-and-billing by
+Friday, November 7 — and what do all three add up to in monthly dollars once they're actually
+collecting?
+
+**A:** _(pending)_
