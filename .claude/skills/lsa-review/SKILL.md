@@ -1,6 +1,6 @@
 ---
 name: lsa-review
-description: Autonomous review stage of the LSA Command loop. Processes Ryan's 🚀 merge approvals from Slack, then adversarially tests the next loop:ready-for-review issue on diyaidev/lsa-command, stages it as a draft PR, and posts it to #lsa-merge-ready. Runs on a /loop timer; also triggered by "/lsa-review" or "run the review loop". Merges ONLY on Ryan's 🚀.
+description: Autonomous review stage of the LSA Command loop. Processes Ryan's 🚀 merge approvals from Slack, then adversarially tests the next loop:ready-for-review issue on diyaidev/LSA-New-V2, stages it as a draft PR, and posts it to #lsa-merge-ready. Runs on a /loop timer; also triggered by "/lsa-review" or "run the review loop". Merges ONLY on Ryan's 🚀.
 ---
 
 # LSA Review — verify, stage, and gate merges
@@ -10,7 +10,7 @@ Each run has two passes: process approvals, then review one build.
 
 ## Step 0 — Setup
 
-Attach `diyaidev/lsa-command` (`add_repo` access=`push`) and clone if needed.
+Attach `diyaidev/LSA-New-V2` (`add_repo` access=`push`) and clone if needed.
 Find the Slack channel `#lsa-merge-ready` (`slack_search_channels`); if it
 doesn't exist, create it (`slack_create_conversation`) and note that in your
 report.

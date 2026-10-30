@@ -4,6 +4,7 @@
 
 - **Always CC Alex Contes (alex@diyai.ai)** on all client/partner email communications sent on Ryan's behalf — meeting recaps, follow-ups, onboarding emails, and similar outbound messages.
 - Ryan sends email as **ryan@diyai.ai**. Draft in Ryan's voice: casual-professional ("Hey <name>," openers, short sections, plain language).
+- **Sender address rule (Ryan, 2026-10-30):** never send from ryan@accelerateyourmarketing.com as a stand-in for a DIYAI or LSA Command email. If the ryan@diyai.ai path (Zapier "Gmail DIYai") is down, use Ryan's **lsacommand.com** mailbox (Composio alias `lsacommand` once connected). If neither is available, stop and ask Ryan rather than sending from another address.
 - Before sending any follow-up/recap, check `in:sent` to avoid duplicate sends.
 
 ## Key contacts
@@ -13,7 +14,7 @@
 
 ## LSA Command Loop
 
-- Autonomous spec → build → review loop for the LSA command software (`diyaidev/lsa-command`), modeled on Finn's "Fin Loop". Full playbook: `docs/lsa-command-loop.md`. Skills: `lsa-spec` (morning interview → GitHub issues), `lsa-build` (builds next backlog issue on a `loop/` branch), `lsa-review` (independently tests, stages a **draft PR**, posts to `#lsa-merge-ready` in Slack).
+- Autonomous spec → build → review loop for the LSA command software (`diyaidev/LSA-New-V2`), modeled on Finn's "Fin Loop". Full playbook: `docs/lsa-command-loop.md`. Skills: `lsa-spec` (morning interview → GitHub issues), `lsa-build` (builds next backlog issue on a `loop/` branch), `lsa-review` (independently tests, stages a **draft PR**, posts to `#lsa-merge-ready` in Slack).
 - **Hard rules:** the live platform (default branch) never changes without Ryan's 🚀 reaction in Slack; anything touching ad spend, budgets, or billing is never built autonomously (`loop:needs-human`).
 - Morning kickoff: Ryan runs `/lsa-spec` with his ideas, then starts `/loop 30m run the lsa-build skill, then the lsa-review skill`. Evening: Ryan reacts 🚀 (merge) or 👎 (send back) in `#lsa-merge-ready`. "Process the LSA approvals" = run `lsa-review` Pass 1 immediately.
 - **All loop questions to Ryan go via Telegram** (his main comms channel): Composio → `TELEGRAM_SEND_MESSAGE` / poll `TELEGRAM_GET_UPDATES`, Telegram connection alias `ryan-loop`; chat_id + mechanics in `docs/lsa-command-loop.md`. Fall back to in-session questions only if Telegram is unreachable.

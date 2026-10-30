@@ -1,6 +1,6 @@
 # LSA Command Loop
 
-An autonomous build loop for the LSA command software (`diyaidev/lsa-command`),
+An autonomous build loop for the LSA command software (`diyaidev/LSA-New-V2`),
 modeled on Finn's "Fin Loop" (spec → build → review, YouTube FRGLToHAtgc) and
 configured from Ryan's interview answers on 2026-08-04.
 
@@ -19,7 +19,7 @@ Three project skills in `.claude/skills/`, one shared pipeline on GitHub Issues:
 | Build | `lsa-build` | Picks the next backlog issue, builds it on a `loop/<n>-<slug>` branch, verifies, hands to review |
 | Review | `lsa-review` | Independently tests the build, stages it as a **draft PR**, posts to Slack; merges only on Ryan's 🚀 |
 
-### Issue pipeline (labels on `diyaidev/lsa-command`)
+### Issue pipeline (labels on `diyaidev/LSA-New-V2`)
 
 ```
 loop:backlog → loop:building → loop:ready-for-review → loop:merge-ready → merged (issue closed)
@@ -102,7 +102,7 @@ to Telegram too (reply "merge #N"), or keep the Slack 🚀 flow?_
       when the first message lands.
 - [ ] Merge this PR so the skills land on `main` and load in future sessions.
 - [ ] First `/lsa-spec` run: approve the `add_repo` prompt for
-      `diyaidev/lsa-command` (push access) — subsequent sessions reuse it.
+      `diyaidev/LSA-New-V2` (push access) — subsequent sessions reuse it.
 - [ ] Same run creates the six `loop:*` labels on the repo.
 - [ ] First `/lsa-review` run: approve Slack channel creation for
       `#lsa-merge-ready`.
@@ -112,7 +112,7 @@ to Telegram too (reply "merge #N"), or keep the Slack 🚀 flow?_
 ## Current status
 
 - **2026-08-04** — Loop designed from the video transcript + Ryan's interview
-  (repo: `diyaidev/lsa-command` · tracker: GitHub Issues · staging: draft PRs ·
+  (repo: `diyaidev/LSA-New-V2` · tracker: GitHub Issues · staging: draft PRs ·
   approvals: Slack 🚀 · cadence: morning kickoff + all-day 30m loop · first
   focus: bug fixes & polish). Skills staged for review; nothing run against
   the live repo yet.
@@ -121,7 +121,7 @@ to Telegram too (reply "merge #N"), or keep the Slack 🚀 flow?_
   "clients find breakage before we do" is the top pain; P2: rankings tracked
   over time in results/dashboard/monthly report). **Blocked on two one-time
   approvals from Ryan:** (1) the `add_repo` permission prompt for
-  `diyaidev/lsa-command` — until approved, issues can't be filed and the loop
+  `diyaidev/LSA-New-V2` — until approved, issues can't be filed and the loop
   can't build; (2) the Telegram bot token paste for the `ryan-loop`
   connection. Q0 (move merge approvals from Slack 🚀 to Telegram?) still
   unanswered — Slack stays until Ryan says otherwise.

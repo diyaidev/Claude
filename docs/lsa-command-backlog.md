@@ -1,7 +1,7 @@
 # LSA Command — Loop Backlog (spec of record, 2026-08-05)
 
 Spec'd with Ryan via the kickoff interview. **File these verbatim as GitHub
-issues on `diyaidev/lsa-command` the moment the repo is attached** (label +
+issues on `diyaidev/LSA-New-V2` the moment the repo is attached** (label +
 title as shown, body from each section). Until then this file is the backlog's
 source of truth. After filing, the first `lsa-spec` session should also audit
 the existing rankings feature in code and add polish issues for rough edges it
@@ -161,3 +161,30 @@ Redesigning the rest of the report.
 ## Test plan (staging)
 Generate the monthly report for seeded and fresh businesses; verify section
 contents and overall generation.
+
+---
+
+## 2026-10-30 — AI "done-for-you" features, filed on `diyaidev/LSA-New-V2`
+
+Repo correction: the software lives at `diyaidev/LSA-New-V2` (Laravel 8 backend,
+Vue 2 frontends, `ai-agent/` voice+SMS service, `chatgpt-integration/` MCP pilot).
+`diyaidev/lsa-command` never existed. Labels `loop:*` were created on first filing.
+
+Filed as `loop:backlog` (spec'd in-session; Telegram chat_id still unrecorded, so
+assumptions are listed in each issue for the reviewer to surface):
+
+- **#4 [P1] Lead credit recovery loop** — Google removed manual lead disputes in
+  mid-2024; the only input is the lead rating survey, which the app already
+  submits (`GoogleLeadFeedback`, `auto_survey_enabled`). Issue adds the
+  coverage guard (rate every charged lead before day 30), credit-decision
+  tracking, and "spend recovered" on the dashboard + monthly summary.
+- **#5 [P1] Missed-call text-back** — app already notifies the *owner* of
+  missed calls and runs an SMS agent; nothing texts the *customer*. Off by
+  default, quiet hours, opt-out, hands off to the existing SMS agent.
+- **#6 [P2] Auto-respond to reviews** — the `auto_respond_reviews` switch is
+  saved but inert, and `reviews:send` is registered but never scheduled.
+  Positive reviews auto-replied; negative ones drafted and held for approval.
+
+Not filed (ideas from the same session, for a later `/lsa-spec`): lost-lead
+recovery sequences, rank-drop diagnosis, competitor watch, quote/invoice
+drafting from call transcripts, appointment confirmations/no-show handling.
