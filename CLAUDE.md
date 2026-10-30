@@ -3,7 +3,7 @@
 ## Email & communications preferences (Ryan)
 
 - **Always CC Alex Contes (alex@diyai.ai)** on all client/partner email communications sent on Ryan's behalf — meeting recaps, follow-ups, onboarding emails, and similar outbound messages.
-- Ryan sends email as **ryan@diyai.ai**. Draft in Ryan's voice: casual-professional ("Hey <name>," openers, short sections, plain language).
+- Ryan sends email as **ryan@lsacommand.com** (as of 2026-10-30; previously ryan@diyai.ai). Draft in Ryan's voice: casual-professional ("Hey <name>," openers, short sections, plain language).
 - Before sending any follow-up/recap, check `in:sent` to avoid duplicate sends.
 
 ## Key contacts
