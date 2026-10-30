@@ -70,3 +70,23 @@ Google weights H2s heavily.
 | 5 Messages | LSA API Fallback | "Never Miss a Google LSA Message Lead" |
 
 Self-host these as `<video autoplay muted loop playsinline>` with a poster image, plus `VideoObject` schema. Also upload each one to YouTube under the title above, so it can rank in video results.
+
+## YouTube upload kit (manual upload; no tool here can publish to YouTube)
+Upload to the Ryan Steinolfson channel (where the existing LSA demo lives). For each video, paste the description below and end it with the page link.
+
+| File (Higgsfield) | Title | Link in description |
+|---|---|---|
+| Call answering | AI Answering Service for Google Local Services Ads (100% of LSA Calls Answered) | lsacommand.com/lsa-ai-call-answering/ |
+| Message leads | Why 10–15% of Your Google LSA Message Replies Never Arrive | lsacommand.com/lsa-message-leads/ |
+| Lead disputes | How to Dispute Google LSA Leads & Get Credits (2026) | lsacommand.com/lsa-lead-disputes/ |
+| Service area | Google LSA Service Area Targeting by City & Zip Code | lsacommand.com/lsa-service-area/ |
+| Reviews | How to Get More Google LSA Reviews Automatically | lsacommand.com/lsa-reviews/ |
+
+Description template:
+> {One-line hook from the page lede.}
+> LSA Command is software for Google Local Services Ads. It answers every call and message, rates every lead back to Google, flags bad leads for credit, targets your service area, and gets you more reviews.
+> ▶ Learn more: {page link}
+> ▶ Text 989-712-4370 and time how fast we answer.
+> #LocalServicesAds #GoogleLSA #HomeServices
+
+Tip: on YouTube, mark these as Shorts-style clips or add them as "related video" cards on the 3-minute demo.
