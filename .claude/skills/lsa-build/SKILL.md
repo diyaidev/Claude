@@ -1,6 +1,6 @@
 ---
 name: lsa-build
-description: Autonomous build stage of the LSA Command loop. Picks the next loop:backlog issue on diyaidev/lsa-command, implements it on a feature branch, verifies it, and hands it to review. Runs on a /loop timer; also triggered by "/lsa-build" or "run the build loop". Never merges, never touches live.
+description: Autonomous build stage of the LSA Command loop. Picks the next loop:backlog issue on diyaidev/LSA-New-V2, implements it on a feature branch, verifies it, and hands it to review. Runs on a /loop timer; also triggered by "/lsa-build" or "run the build loop". Never merges, never touches live.
 ---
 
 # LSA Build — build the next backlog issue
@@ -10,7 +10,7 @@ Each run: build exactly ONE issue end-to-end, hand it to review, stop.
 
 ## Step 0 — Setup
 
-Attach `diyaidev/lsa-command` (`add_repo` access=`push`), clone, and read the
+Attach `diyaidev/LSA-New-V2` (`add_repo` access=`push`), clone, and read the
 repo's `CLAUDE.md`/`README.md` for its conventions, run commands, and test
 commands. All work happens in the clone; never in the workspace repo.
 

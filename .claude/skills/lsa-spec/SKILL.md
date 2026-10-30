@@ -1,6 +1,6 @@
 ---
 name: lsa-spec
-description: Morning kickoff for the LSA Command loop. Interviews Ryan about what he wants built/fixed in the LSA command software (diyaidev/lsa-command), then files detailed, buildable GitHub issues with acceptance criteria into the loop backlog. Use when Ryan says "/lsa-spec", "spec the LSA loop", "let's spec", or gives LSA command ideas to queue up.
+description: Morning kickoff for the LSA Command loop. Interviews Ryan about what he wants built/fixed in the LSA command software (diyaidev/LSA-New-V2), then files detailed, buildable GitHub issues with acceptance criteria into the loop backlog. Use when Ryan says "/lsa-spec", "spec the LSA loop", "let's spec", or gives LSA command ideas to queue up.
 ---
 
 # LSA Spec — capture Ryan's ideas as buildable issues
@@ -12,10 +12,10 @@ GitHub issues so the Build and Review loops can work all day without him.
 ## Step 0 — Setup (do silently, ask nothing)
 
 1. Attach the software repo if not already in session scope:
-   `add_repo` owner=`diyaidev` repo=`lsa-command` access=`push`, then clone and
+   `add_repo` owner=`diyaidev` repo=`LSA-New-V2` access=`push`, then clone and
    `register_repo_root` if instructed. Read its `README.md`/`CLAUDE.md` so your
    questions are informed by what the software actually does today.
-2. Ensure these labels exist on `diyaidev/lsa-command` (create any missing):
+2. Ensure these labels exist on `diyaidev/LSA-New-V2` (create any missing):
    `loop:backlog`, `loop:building`, `loop:ready-for-review`, `loop:merge-ready`,
    `loop:blocked`, `loop:needs-human`.
 
@@ -48,7 +48,7 @@ before filing anything.
 
 Break the confirmed plan into issues, each completable in a single build cycle
 (roughly ≤ half a day of agent work; split anything bigger). File each on
-`diyaidev/lsa-command` with label `loop:backlog` and this body structure:
+`diyaidev/LSA-New-V2` with label `loop:backlog` and this body structure:
 
 ```
 ## Background
