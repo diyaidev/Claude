@@ -4,6 +4,7 @@
 
 - **Always CC Alex Contes (alex@diyai.ai)** on all client/partner email communications sent on Ryan's behalf — meeting recaps, follow-ups, onboarding emails, and similar outbound messages.
 - Ryan sends email as **ryan@diyai.ai**. Draft in Ryan's voice: casual-professional ("Hey <name>," openers, short sections, plain language).
+- **Sender address rule (Ryan, 2026-10-30):** never send from ryan@accelerateyourmarketing.com as a stand-in for a DIYAI or LSA Command email. If the ryan@diyai.ai path (Zapier "Gmail DIYai") is down, use Ryan's **lsacommand.com** mailbox (Composio alias `lsacommand` once connected). If neither is available, stop and ask Ryan rather than sending from another address.
 - Before sending any follow-up/recap, check `in:sent` to avoid duplicate sends.
 
 ## Key contacts
