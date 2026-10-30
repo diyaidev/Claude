@@ -151,7 +151,7 @@ post("/blog/bad-google-lsa-leads/",
 <li><strong>Block robocalls</strong> before they reach your phone. LSA Command uses a three-layer filter.</li>
 </ol>"""),
          ("Then train Google with feedback", """
-<p>Rate every lead. Feedback is how Google learns which leads you want, and it matters even more as LSA bidding becomes automated under Performance Max. LSA Command <a href="/lsa-lead-disputes/">scores every lead 1–5, rates it back to Google, and flags credit-eligible leads</a>, then tracks the credits Google actually records.</p>"""),
+<p>Rate every lead. Feedback is how Google learns which leads you want. LSA Command <a href="/lsa-lead-disputes/">scores every lead 1–5, rates it back to Google, and flags credit-eligible leads</a>, then tracks the credits Google actually records.</p>"""),
          ("Don’t mistake a missed lead for a bad lead", """
 <p>Some leads look bad because nobody answered them in time. The customer called someone else. Check your answer rate before blaming lead quality. <a href="/lsa-ai-call-answering/">Answering every call</a> often improves your “lead quality” overnight.</p>"""),
      ],

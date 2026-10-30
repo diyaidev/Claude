@@ -16,7 +16,7 @@ POSTS.append(dict(
         [("Blog", "/blog/")],
         [
             ("What’s happening", """
-<p>Google is moving Local Services Ads out of its standalone dashboard and into Google Ads, where LSA becomes a <strong>Performance Max campaign type with a pay-per-lead goal</strong>. Industry coverage says the rollout started in August 2026 with select U.S. advertisers and will expand through 2027. <a href="https://ppc.land/lsarespond-tops-2-000-users-as-google-moves-local-services-ads-into-pmax/">PPC Land</a> and <a href="https://www.invoca.com/blog/googles-local-services-ads-moving-to-performance-max-heres-everything-you-need-to-know">Invoca</a> both cover the change.</p>
+<p>Google is moving Local Services Ads out of its standalone dashboard and into Google Ads, where LSA becomes a <strong>Performance Max campaign type with a pay-per-lead goal</strong>. Industry coverage says the rollout started in August 2026 with select U.S. advertisers and will expand through 2027. <a href="https://www.invoca.com/blog/googles-local-services-ads-moving-to-performance-max-heres-everything-you-need-to-know">Invoca has a detailed rundown</a>.</p>
 <p>Google’s official migration notice in your account is the final word on your timing. Watch for it, and don’t make changes based on rumors.</p>"""),
             ("What stays the same", """
 <ul>
